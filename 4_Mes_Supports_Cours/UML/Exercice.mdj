@@ -1394,7 +1394,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnRR5dtl52LE="
 					},
-					"name": "Role1"
+					"name": "Role1",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -1402,7 +1403,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnRR5dtl52LE="
 					},
-					"name": "Role2"
+					"name": "Role2",
+					"type": ""
 				}
 			]
 		},
@@ -3040,7 +3042,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnU8WDdravGQ="
 					},
-					"name": "Role1"
+					"name": "Role1",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -3048,7 +3051,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnU8WDdravGQ="
 					},
-					"name": "Role2"
+					"name": "Role2",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -3056,7 +3060,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDnU8WDdravGQ="
 					},
-					"name": "Role3"
+					"name": "Role3",
+					"type": ""
 				}
 			]
 		},
@@ -3102,7 +3107,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 24.72998046875,
-											"top": 37,
+											"top": 29,
 											"width": 174.41162109375,
 											"height": 13,
 											"text": " Modifier un compte utilisateur"
@@ -3115,16 +3120,16 @@
 											},
 											"font": "Arial;13;1",
 											"left": 5,
-											"top": 37,
+											"top": 29,
 											"width": 14.72998046875,
 											"height": 13,
 											"text": "sd"
 										}
 									],
 									"font": "Arial;13;0",
-									"top": 32,
-									"width": 1177,
-									"height": 689,
+									"top": 24,
+									"width": 1233,
+									"height": 697,
 									"nameLabel": {
 										"$ref": "AAAAAAGDniTgkd1/k94="
 									},
@@ -3826,9 +3831,9 @@
 												"$ref": "AAAAAAGDnjrr9d5Z2GY="
 											},
 											"font": "Arial;13;0",
-											"left": 510,
+											"left": 497,
 											"top": 264,
-											"width": 112.72802734375,
+											"width": 138.02978515625,
 											"height": 13,
 											"alpha": 1.5145167984159615,
 											"distance": 71.11258679024411,
@@ -3836,7 +3841,7 @@
 												"$ref": "AAAAAAGDnjrr9d5aH8U="
 											},
 											"edgePosition": 1,
-											"text": "5 : Nettoyer le code"
+											"text": "5 : Nettoyer des donées"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -3937,9 +3942,9 @@
 												"$ref": "AAAAAAGDnjsaFN5wxjw="
 											},
 											"font": "Arial;13;0",
-											"left": 502,
+											"left": 483,
 											"top": 336,
-											"width": 182.0888671875,
+											"width": 220.38427734375,
 											"height": 13,
 											"alpha": 1.530001648085035,
 											"distance": 98.08159868191383,
@@ -3947,7 +3952,7 @@
 												"$ref": "AAAAAAGDnjsaFN5xdPs="
 											},
 											"edgePosition": 1,
-											"text": "6 : Vérifier existence du compte"
+											"text": "6 : Vérifier si les données existes(bdd)"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4048,9 +4053,9 @@
 												"$ref": "AAAAAAGDnk2EFd661Xw="
 											},
 											"font": "Arial;13;0",
-											"left": 500,
+											"left": 478,
 											"top": 411,
-											"width": 185.7197265625,
+											"width": 228.34423828125,
 											"height": 13,
 											"alpha": 1.5812116156409146,
 											"distance": 96.00520819205592,
@@ -4058,7 +4063,7 @@
 												"$ref": "AAAAAAGDnk2EFd67RzQ="
 											},
 											"edgePosition": 1,
-											"text": "7 : Démander un mot de passe"
+											"text": "7 : Vérifier si les données correspondes"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4159,9 +4164,9 @@
 												"$ref": "AAAAAAGDnjvcDN6hkzo="
 											},
 											"font": "Arial;13;0",
-											"left": 182,
+											"left": 149,
 											"top": 478,
-											"width": 216.048828125,
+											"width": 282.55322265625,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -4169,7 +4174,7 @@
 												"$ref": "AAAAAAGDnjvcDN6i8uI="
 											},
 											"edgePosition": 1,
-											"text": "8 : Message Saissir le mot de passe"
+											"text": "8 : Demande de confirmation"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4271,9 +4276,9 @@
 												"$ref": "AAAAAAGDnk6R7N7WJXQ="
 											},
 											"font": "Arial;13;0",
-											"left": 204,
+											"left": 199,
 											"top": 536,
-											"width": 153.1943359375,
+											"width": 163.28076171875,
 											"height": 13,
 											"alpha": -2.034443364366968,
 											"distance": 15.652475842498529,
@@ -4281,7 +4286,7 @@
 												"$ref": "AAAAAAGDnk6R7N7Xnzk="
 											},
 											"edgePosition": 1,
-											"text": "9 : Envoie la confirmation"
+											"text": "9 : Confirmer la confirmation"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4392,7 +4397,7 @@
 												"$ref": "AAAAAAGDnlCJhN87B44="
 											},
 											"edgePosition": 1,
-											"text": "10 : Vérifier le mot de passe"
+											"text": "10 : Vérifier la confirmation"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4503,7 +4508,7 @@
 												"$ref": "AAAAAAGDnlEYK99VyuI="
 											},
 											"edgePosition": 1,
-											"text": "11 : Confirmation et modification"
+											"text": "11 : Modifier les données"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -4707,7 +4712,7 @@
 									"top": 744,
 									"width": 329,
 									"height": 201,
-									"text": "(4) scénario alternatif informations incorrectes\n4.1 Le si indique à l'utilisateur que les informations sont incorrectes.\n4.2 retour au point (2) demande des informations.\n4.3 utilisateur saisi les informations.\nDans le scénario nominal les informations sont correctes"
+									"text": "(4) scénario alternatif informations incorrectes\n4.1 Le si indique à l'utilisateur que les informations sont incorrectes.\n4.2 retour au point (2) demande de saisir les informations.\n4.3 Demande à l'utilisateur de saisir les informations.\nDans le scénario nominal les informations sont correctes"
 								},
 								{
 									"_type": "UMLNoteView",
@@ -4718,9 +4723,125 @@
 									"font": "Arial;13;0",
 									"left": 408,
 									"top": 784,
-									"width": 289,
-									"height": 193,
-									"text": "(6) scénario d'erreur le compte n'existe pas\n6.1 Le si indique à l'utilisateur que le compte n'existe pas.\n6.2 Redirection vers (2).\n(10) Scénario d'erreur mot de passe \n10.1 Le SI indique à l'utilisateur que le mot de passe est incorrect\nLe scénario s'arrête à ce point."
+									"width": 305,
+									"height": 249,
+									"text": "(7) scénario alternatif les données sont identiques\n7.1 Le si indique à l'utilisateur que les données sont identiques.\n6.2 Redirection vers (2).\n(10) Scénario d'erreur mot de passe \n10.1 Le SI indique à l'utilisateur que le mot de passe est incorrect\nLe scénario s'arrête à ce point."
+								},
+								{
+									"_type": "UMLSeqLifelineView",
+									"_id": "AAAAAAGDogiTRmrP7pw=",
+									"_parent": {
+										"$ref": "AAAAAAGDniTgkd19Xio="
+									},
+									"model": {
+										"$ref": "AAAAAAGDogiTRmrOKgc="
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "AAAAAAGDogiTRmrQRgE=",
+											"_parent": {
+												"$ref": "AAAAAAGDogiTRmrP7pw="
+											},
+											"model": {
+												"$ref": "AAAAAAGDogiTRmrOKgc="
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAGDogiTRmrRnOQ=",
+													"_parent": {
+														"$ref": "AAAAAAGDogiTRmrQRgE="
+													},
+													"visible": false,
+													"font": "Arial;13;0",
+													"left": 288,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAGDogiTR2rSsZ0=",
+													"_parent": {
+														"$ref": "AAAAAAGDogiTRmrQRgE="
+													},
+													"font": "Arial;13;1",
+													"left": 981,
+													"top": 47,
+													"width": 62.736328125,
+													"height": 13,
+													"text": "Bdd"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAGDogiTR2rTbbY=",
+													"_parent": {
+														"$ref": "AAAAAAGDogiTRmrQRgE="
+													},
+													"visible": false,
+													"font": "Arial;13;0",
+													"left": 288,
+													"width": 106.20263671875,
+													"height": 13,
+													"text": "(from Interaction1)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAGDogiTR2rUfJg=",
+													"_parent": {
+														"$ref": "AAAAAAGDogiTRmrQRgE="
+													},
+													"visible": false,
+													"font": "Arial;13;0",
+													"left": 288,
+													"height": 13,
+													"horizontalAlignment": 1
+												}
+											],
+											"font": "Arial;13;0",
+											"left": 976,
+											"top": 40,
+											"width": 72.736328125,
+											"height": 40,
+											"stereotypeLabel": {
+												"$ref": "AAAAAAGDogiTRmrRnOQ="
+											},
+											"nameLabel": {
+												"$ref": "AAAAAAGDogiTR2rSsZ0="
+											},
+											"namespaceLabel": {
+												"$ref": "AAAAAAGDogiTR2rTbbY="
+											},
+											"propertyLabel": {
+												"$ref": "AAAAAAGDogiTR2rUfJg="
+											}
+										},
+										{
+											"_type": "UMLLinePartView",
+											"_id": "AAAAAAGDogiTR2rVj/8=",
+											"_parent": {
+												"$ref": "AAAAAAGDogiTRmrP7pw="
+											},
+											"model": {
+												"$ref": "AAAAAAGDogiTRmrOKgc="
+											},
+											"font": "Arial;13;0",
+											"left": 1012,
+											"top": 80,
+											"width": 1,
+											"height": 160
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 976,
+									"top": 40,
+									"width": 72.736328125,
+									"height": 200,
+									"nameCompartment": {
+										"$ref": "AAAAAAGDogiTRmrQRgE="
+									},
+									"linePart": {
+										"$ref": "AAAAAAGDogiTR2rVj/8="
+									}
 								}
 							]
 						}
@@ -4789,7 +4910,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Nettoyer le code",
+							"name": "Nettoyer des donées",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
@@ -4803,13 +4924,14 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Vérifier existence du compte",
+							"name": "Vérifier si les données existes",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
 							"target": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
-							}
+							},
+							"arguments": "bdd"
 						},
 						{
 							"_type": "UMLMessage",
@@ -4817,7 +4939,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Démander un mot de passe",
+							"name": "Vérifier si les données correspondes",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
@@ -4831,7 +4953,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Message Saissir le mot de passe",
+							"name": "Demande de confirmation",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
@@ -4846,7 +4968,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Envoie la confirmation",
+							"name": "Confirmer la confirmation",
 							"source": {
 								"$ref": "AAAAAAGDniVQTN2MK9E="
 							},
@@ -4860,7 +4982,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Vérifier le mot de passe",
+							"name": "Vérifier la confirmation",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
@@ -4874,7 +4996,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGDniTgkd18qG8="
 							},
-							"name": "Confirmation et modification",
+							"name": "Modifier les données",
 							"source": {
 								"$ref": "AAAAAAGDni4VDN2t4ng="
 							},
@@ -4922,6 +5044,18 @@
 								"$ref": "AAAAAAGDni4VDN2sUtI="
 							},
 							"isMultiInstance": false
+						},
+						{
+							"_type": "UMLLifeline",
+							"_id": "AAAAAAGDogiTRmrOKgc=",
+							"_parent": {
+								"$ref": "AAAAAAGDniTgkd18qG8="
+							},
+							"name": "Bdd",
+							"represent": {
+								"$ref": "AAAAAAGDogiTRmrNWDc="
+							},
+							"isMultiInstance": false
 						}
 					]
 				}
@@ -4933,7 +5067,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDniTgkd17BJQ="
 					},
-					"name": "Role1"
+					"name": "Role1",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -4941,7 +5076,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGDniTgkd17BJQ="
 					},
-					"name": "Role2"
+					"name": "Role2",
+					"type": ""
 				},
 				{
 					"_type": "UMLAttribute",
@@ -4949,7 +5085,16 @@
 					"_parent": {
 						"$ref": "AAAAAAGDniTgkd17BJQ="
 					},
-					"name": "Role3"
+					"name": "Role3",
+					"type": ""
+				},
+				{
+					"_type": "UMLAttribute",
+					"_id": "AAAAAAGDogiTRmrNWDc=",
+					"_parent": {
+						"$ref": "AAAAAAGDniTgkd17BJQ="
+					},
+					"name": "Role4"
 				}
 			]
 		}
