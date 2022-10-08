@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<link rel="stylesheet" href="css.css">
+
+<body>
+    <header>
+        <img  src="./main_image_star-forming_region_carina_nircam_final-5mb.jpg" alt="universe" height="200" width="800">
+    <h1>Bienvenue dans mon site</h1>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="#article">Blog</a>
+            </li>
+            <li>
+                <a href="gallerie">Gallerie</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+    </header>
+    <section>
+        <form method="post" action="monProgramme.php">
+            <fieldset>
+                <legend>Contact</legend>
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="nom"  required placeholder="Entrez un nom" maxlength="20" minlength="2"/>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required placeholder="Entrez un email"/>
+                </div>
+                <div>
+                    <label for="textarea">Commentaire</label>
+                    <textarea cols="70" rows="10" placeholder="Laisez ici votre"></textarea>
+                    
+                </div>
+                <div></div>
+                <div></div>
+
+            </fieldset>
+            
+        </form>
+    </section>
+
+    
+</body>
+</html>

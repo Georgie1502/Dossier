@@ -1,0 +1,60 @@
+h1{
+    color: blue
+
+}
+h1:hover{
+    color:green
+}
+h1{
+    text-shadow: 20px -5px 5px purple;
+}
+a{
+    color:yellowgreen
+}
+a:visited{
+    color:gray
+}
+a:link{
+    color:orange
+}
+#newImage{
+    background-color:white;
+}
+#newImage + div {
+    text-align: right;
+    font-size:2em ;
+}
+
+p:hover{
+    background-color: lightgray;
+
+}
+p{
+    box-shadow: 0px 0px 10px red;
+}
+/* On rajout les ombres en donant 3 valeurs (horizontal, vertical , niveau de flou et couleur  */
+#p2 {
+    box-shadow: -5px 5px 5px green;
+    /*  pour identifier un paragraphe je peux mettre un ID ou bien utiliser le id du block   */
+}
+li:nth-child(even) {
+    color:blue
+}
+/* mettre en bleu un élément sur deux de maniére paire */
+
+ul:hover li:nth-child(even){
+    color:black;
+   
+   
+}
+ul:hover li:nth-child(odd){
+    color:blue;
+   
+   
+}
+
+/* inversez la sélection au passage de la souris ( le bleu devient noir et le noir devient bleu */
+
+
+
+    

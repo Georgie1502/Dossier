@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Pour toute demande d'informations</h1>
+
+    <p>Veillez remplir les champs ci-dessous</p>
+    <input type="radio" id="radio1" name="radio" checked value="radio1"/><label for="radio1">Autre demande</label>
+    <input type="radio" id="radio2" name="radio" value="radio2"/><label for="radio2"> Je cherche une artisane</label>
+    <input type="radio" id="radio3" name="radio" value="radio3"/><label for="radio3"> Je veux devenir artisane</label>
+    <input type="radio" id="radio4" name="radio" value="radio4"/><label for="radio4"> Je suis une artisane, je veux intégrer le réseau</label>
+    
+
+    <h2> Vos coordonées</h2>
+    <form method="post" action="monProgramme.php">
+        <label for="nom">Nom </label>
+        <input type="text" name="nom" placeholder="Entrez votre Nom" size="30" id="nom" required>
+
+        <label for="prenom">Prénom </label>
+        <input type="text" name="prenom" placeholder="Entrez votre Prénom" size="30" id="prenom" required>
+        <br>
+
+        <label for="tel">Téléphone </label>
+        <input type="tel" name="tel" placeholder="Entrez votre Télephone" size="30" id="tel" required>
+
+        <label for="email">Email </label>
+        <input type="email" name="email" placeholder="Entrez votre mail" size="30" id="email" required>
+        <br>
+
+        <label for="act">Activité </label>
+        <input type="text" name="act" placeholder="Entrez votre activité" size="30" id="act" required>
+
+        <label for="ville">Ville </label>
+        <input type="text" name="ville" placeholder="Entrez votre ville" size="30" id="ville" required>
+        <br>
+
+        <label for="textarea">Votre message </label><br>
+        <textarea name="textarea" cols="70" rows="20" placeholder="Entrez votre Parcours" id="textea" required>
+        </textarea><br>
+
+        <!-- Pourquio le placeholder ne apparece pas dans le corps du area ? -->
+        <input type="checkbox" id="checkbox"/><label for="checkbox"> Je certifie avoir pris connaissance des modalités d’inscription des conditions générales d'utilisation et déclare les accepter. Vos données personnelles seront utilisées pour traiter votre demande, améliorer votre expérience sur ce site et pour d'autres objectifs décrits dans notre politique de confidentialité.</label><br>
+        <p>*Champs obligatoires</p><br>
+        <input type="submit" value="Envoyer"/>
+
+
+    </form>
+</body>
+</html>
+

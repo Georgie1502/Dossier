@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6d6d6d;
+    line-height: 1.7em;
+    
+}
+.accueil section:first-child h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+
+h2,.attention,form{
+    color: #7c925e;
+}
+.attention{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#ebe2d7 ;
+    height:max-content;
+    font-size:  20px; 
+    margin: 0%;
+    position: fixed;
+    width: 100%;
+ 
+}   
+
+
+/*********************************header*******************************/
+header{
+    background-color: #fbf9f7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: auto;
+    border:  6px solid #6d6d6d;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: 100%;
+    padding: 80px 20% 0;
+    height: 120px;
+    
+    
+}
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+ul {
+    display: flex;
+    flex-grow: 1;
+}
+nav img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;}
+
+    nav li {
+        font-size: 1.2em;
+        margin-right: 5%;
+    }
+    
+    nav a:hover {
+        color: #7c925e;
+    }
+    
+/*********************************Footer*******************************/
+
+footer {
+    height: 200px;
+    padding: 30px 20%;
+}
+
+footer form {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 30% 65%;
+    gap: 5%;
+}
+
+#nom {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#prenom {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#mail {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#message {
+    grid-column: 2;
+    grid-row: 1 /span 3;
+}
+
+footer form input[type="submit"] {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: #7c925e;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+footer input {
+    height: 2em;
+    padding: 5px 10px;
+}
+
+/*********************************Main*******************************/
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr  ;
+    padding: 100px;
+   
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ebe2d7;
+    border-style: none;
+    padding: 7%;
+    
+
+
+}
+.contenu{
+    grid-column: 1;
+    grid-row: 1 /span 3;
+    
+    
+}
+#carnet,#fondu,#mug{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+img{
+    float:left;
+}
+#button{
+    background-color: #7c925e;
+    border: none;
+}
+
+/*********************************responsive*******************************/
+@media screen and (max-width: 575px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .attention{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color:#ebe2d7 ;
+        height:max-content;
+        font-size:  20px; 
+        margin: 0%;
+        width: 100%;
+     
+    } 
+
+  }

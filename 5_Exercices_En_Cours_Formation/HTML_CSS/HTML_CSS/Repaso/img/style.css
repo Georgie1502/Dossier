@@ -1,0 +1,140 @@
+/* ON VA AVOIR TOUJOURS CES VALEURS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:auto auto auto auto ;
+}
+/* on met de taille à nos images */
+
+
+header img:first-child{
+    width: 10em;
+
+}
+section img{
+    height: 450px;
+
+}
+
+main section:nth-child(2) img{
+    height: 200px;
+}
+footer img{
+    width: 30%;
+}
+
+/* on modifie le header et le footer */
+
+header footer{
+    margin: 15vw;
+    padding: 15vw;
+   
+}
+/* *******************************HEADER*************************************************** */
+header{
+    border-bottom: 4px solid black;
+    grid-column: 1 / span 4;
+    grid-row: 1;
+   
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+  
+
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+   
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+
+/* on met on place le grid pour mon contenu principal */
+
+/* *******************************MAIN*************************************************** */
+main{
+    grid-column: 2 / span 4;
+    grid-row: 2 / span 2;
+   
+}
+main section:first-child{
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+div{
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    justify-self: center;
+}
+main section:last-child{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-gap: 10px 5px
+
+}
+h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+/* *******************************ASIDE*************************************************** */
+aside{
+    grid-column: 1;
+    grid-row: 2 / span 3;
+    padding: 10%;
+}
+
+
+/* *******************************FOOTER*************************************************** */
+
+footer{
+    border-top: 4px solid black;
+    grid-column: 1 / span 4;
+    grid-row: 4;
+    padding: 20px; 
+           
+}
+
+.pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

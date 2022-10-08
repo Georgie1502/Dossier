@@ -1,0 +1,142 @@
+body {
+height: auto;
+width: 1000px;
+display: flex;
+flex-wrap: wrap;
+margin-right: auto;
+margin-left: auto;
+flex-direction: column;
+justify-content: center;
+font-size: .9em;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #111;
+}
+
+
+H1 {
+    font-size: 1cm;
+    text-decoration:underline yellow;
+}
+H2 {
+    text-decoration:underline yellow;
+}
+H3 {
+    text-decoration:underline yellow;
+    font-size: medium;
+    margin-left: 20px;
+}
+
+a {
+    font-size: .9em;
+    font:bolder;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+}
+
+
+#iTaf {
+    width: 1100px;
+}
+#buttom_region{
+    width: 200px;
+    border-radius: 10px;
+}
+
+#buttom_contact {  
+    background-color: rgba(255, 233, 36, 0.822) ;
+    border-radius: 10px;
+}
+
+nav{
+    justify-items: center;
+    align-items: center;
+    font-size: large;
+    font-style: black, oblique;
+    display: grid;
+    grid-template-columns: 200px auto auto auto auto auto auto auto;  
+    grid-auto-flow: column;
+}
+
+.encadre_jaune {
+    background-color: rgba(255, 233, 36, 0.822);
+    border-radius: 15px;
+    padding: auto;
+}
+
+#link_reseaux {
+    display: flex;
+    justify-content: end;
+}
+
+.icon {
+    width: 50px;
+}
+
+.sommaire {
+    background-color: rgb(224, 223, 222);
+    border-radius: 15px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: .9em;
+    font-family: 'Montserrat',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #111;
+}
+
+footer{
+    display: flex;
+    width: auto;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.829);
+    grid-column: 1 /span 5;
+    grid: row 3px;;
+    text-decoration: none;
+}
+
+#ulfoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+    color: white;
+    text-decoration: none;
+}
+.adinfo{
+    margin: 10px;
+    width: 25%;
+}
+.link{
+    color:white;
+
+}
+.link:hover{
+    color:#8f0123;
+}
+#logo{
+    width:100px;
+    display:flex;
+    align-self: flex-end;
+}
+ion-icon:hover{
+    color:#ffcd00;
+}
+
+.footerH1 {
+    font-size: 15px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.p_footer {
+    color: white
+}
+
+#e_adrar {
+    color: white;
+}

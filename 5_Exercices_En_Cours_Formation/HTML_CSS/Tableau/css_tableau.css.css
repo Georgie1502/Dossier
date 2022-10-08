@@ -1,0 +1,51 @@
+div,p {
+
+    border: 2px solid black;
+    margin-bottom: 20px;
+    width:200px; 
+    height: 200px;
+    
+    
+}
+#une{
+    background-image: linear-gradient(to left bottom, red, green, blue);
+}
+#deux {
+    background-image: linear-gradient(-70deg,yellow,purple 25%)
+}
+
+p {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(0,0,0,0.5));
+}
+
+#trois {
+    background-image: radial-gradient(circle at center, lightblue , pink );
+
+}
+
+#quatre{
+    background-image: repeating-radial-gradient(circle at center, black, white 10px);
+}
+
+#quatre:hover{
+    background-image: repeating-radial-gradient(circle at center, white, black 10px);   
+}
+
+table{
+    border-style: double;
+    border-color: purple;
+    border-width: 5px; 
+    border-collapse: collapse;
+}
+
+th{
+    background-color: aqua;
+    border: 2px black solid
+}
+td{
+    border: solid black 2px ;
+}
+
+caption{
+    color:purple;
+}

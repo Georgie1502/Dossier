@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="HTML_BASE/CSS_SS"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+</head>
+<body>
+    <h1> Nous n'avons pas d'internet</h1>
+    <div id="contenu">
+        <img src="img/pexels.jpg" <alt> imagen dame et ordinateur</alt>
+        <p>jfdiurzeirizrezijhqdksjkdlkqlsdklsd</p>
+
+    </div id="contenu">
+    <div>
+        <img src="img/6953862.jpg" <alt> femme </alt>
+        <p>jdkqdjzqazmp^^r^ytyfstafztaztaztzratzhsdjkhsjdsjhdjsh</p>
+    </div>
+</body>
+</html>

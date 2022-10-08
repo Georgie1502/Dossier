@@ -1,0 +1,15 @@
+h1{
+    color:red
+}
+a{
+    color:yellowgreen
+}
+#newImage{
+    background-color:lightgray;
+}
+#newImage + div {
+    text-align: right;
+    font-size:2em ;
+}
+
+    

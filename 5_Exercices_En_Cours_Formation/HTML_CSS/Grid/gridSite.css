@@ -1,0 +1,45 @@
+#body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-rows:auto auto auto auto;
+    
+
+}
+
+h1{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self:center ;
+
+}
+nav{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+
+
+}
+#article1{
+    grid-row: 3;
+    grid-column: 1;
+}
+#article2{
+    grid-row: 3;
+    grid-column: 1;
+
+}
+#article3{
+    grid-row: 3;
+    grid-column: 1;
+
+}
+
+footer{
+    grid-row: 4;
+    grid-column: ;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+
+}

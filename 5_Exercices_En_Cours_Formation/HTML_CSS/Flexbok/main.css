@@ -1,0 +1,60 @@
+.dice{
+    border: 2px red solid;
+    border-radius: 25px;
+    background-color: lightgray;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border: 1px red solid;
+    background-color: red;
+    border-radius: 10px;
+   
+}
+
+#d1{
+    align-items: center;
+    justify-content: center;
+}
+
+#d2,#d3{
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#d4 div,#d6 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    
+}
+
+#d4, #d6{
+    justify-content: space-around;
+
+
+}
+
+#d5{
+    justify-content: space-evenly;
+    }
+
+#d5 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#d5 .dot{
+    align-items: center;
+}
+

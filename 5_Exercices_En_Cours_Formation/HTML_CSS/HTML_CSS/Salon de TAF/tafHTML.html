@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="TAF_styleAccueil.css">
+    <title>Projet Stand Salon </title>
+</head>
+<body>
+    <header>  
+        <nav class="nav_menu">
+            <img src="region.webp" id="buttom_region">
+            <a href=>NOUS LES DÉVELOPPEURS</a> 
+            <a href="tafHTML.html">HTML </a>
+            <a href="TAF_css.html">CSS  </a>
+            <a href="index_js.html"> JS   </a>
+            <a href=>MINI-JEUX</a> 
+            <a href="TAF_accueil.html">ACCUEIL</a> 
+            <a href="" id="buttom_contact">CONTACT</a> 
+
+        </nav>
+        <div>
+            <img src="https://www.laregion.fr/local/cache-gd2/44/6082d9ea0df08c0d71b532d1e74663.jpg?1652363349" id="iTaf">
+        </div>
+        <nav>
+            <a href="" id>Éducation, orientation, formation et emploi</a>
+        </nav>
+    </header> 
+    <div class="contenu">
+        <h1 id="origin">HTML (HyperText Markup Langage)</h1>
+        <img id="log"src="html logo.png" art="logo html" height="150" width="150" ><br>
+    
+        <h2>C'est quoi HTML en informatique ? </h2>
+        <p>L'HyperText Markup Language, HTML, désigne un type de langage informatique descriptif. Il s'agit plus précisément d'un format de données utilisé dans l'univers d'Internet pour la mise en forme des pages Web. Il permet, entre autres, d'écrire de l'hypertexte, mais aussi d'introduire des ressources multimédias dans un contenu.
+        Développé par le W3C (World Wide Web Consortium) et le WHATWG (Web Hypertext Application Technology Working Group), le format ou langage HTML est apparu dans les années 1990. Il a progressivement subi des modifications et propose depuis 2014 une version HTML5 plus aboutie.
+        L'HTML est ce qui permet à un créateur de sites Web de gérer la manière dont le contenu de ses pages Web va s'afficher sur un écran, via le navigateur. Il repose sur un système de balises permettant de titrer, sous-titrer, mettre en gras, etc., du texte et d'introduire des éléments interactifs comme des images, des liens, des vidéos... L'HTML est plus facilement compris des robots de crawl des moteurs de recherche que le language JavaScript, aussi utilisé pour rendre les pages plus interactives. 
+        </p>
+    
+        <h2> Qu'est-ce qu'une balise en HTML ? </h2>
+        <p>Le HTML repose sur une syntaxe simple et rigide, dont l'unité de base est la balise. Les balises vont toujours par deux, une pour ouvrir l'élément, l'autre pour le fermer.  Elles se construisent toujours de la même façon : </p>
+        <ul id="balise">
+            <li>un chevron  <  pour ouvrir la balise</li>
+            <li>Le nom de l'élément contenu dans la balise </li>
+            <li>Un attribut, si nécessaire, pour qualifier l'élément. Par exemples la source ou la balise alt d'une image. Pour ajouter l'attribut, à l'intérieur de la balise : espace, nom de l'attribut (src, alt, etc), signe égal (=) et une valeur s'il y a lieu, placée entre double quotes (""). Exemple :<strong> < img src="myImage.png" ></strong></li>
+            <li>un chevron > pour fermer la balise</li>
+        
+        </ul>
+        <p>La balise d'ouverture contient le nom de l'élément et l'attribut. Une balise de fermeture termine l'élément, elle ne reprend que le nom de l'élément accompagné d'un slash (/). 
+            Par exemple, la balise paragraphe :<strong> < p> contenu du paragraphe < /p>.</strong> </p>
+        
+            <img src="paraghaphe.PNG" art="paraghaphe"  ><br>
+       
+        
+        <h3>Les principales balises</h3>
+        <ul id="balise1">
+        <li> <strong>< title>titre</ title></strong> : balises ouvrantes et fermantes de titre </li>
+        <li> <strong>< h1>titre 1< /h1></strong> : balises ouvrantes et fermantes de titre de niveau 1</li>
+        <li><strong>< a href="/cible.html">hyperlien< /a></strong> : balise permettant d'introduire une lien hypertexte </li>
+        <li><strong>< IMG src="bateau.jpg" alt="Un bateau"></strong> : balise permettant d'afficher une image et son nom</li>
+        <li> <strong>< strong>Texte< /strong> </strong>: mettre un texte en gras</li>
+        <li><strong>< em>Texte< /em> </strong>: mettre un texte en italique</li>
+        </ul>
+       
+    
+        <h2>Quelle est la différence entre HTML et CSS ?</h2>
+        <p>Ce sont deux languages complémentaires et très proches. Le HTML sert à structurer la page. Il indique aux crawlers comment ils doivent comprendre la page et quels éléments elle contient. Le CSS contient la feuille de style de la page. Les indications qu'il donne concernent exclusivement le design et l'apparence des éléments de la page. Il indique par exemple la police et la couleur du texte.  </p>
+    
+        <h2>Comment créer un fichier HTML ? </h2>
+        <p>Il n'est pas nécessaire d'avoir des connaissances informatiques approfondies ou du matériel complexe pour créer un fichier HTML.</p>
+        <ol id="liste">
+            <li>Ouvrir un éditeur de texte approprié : sur Microsoft, le Bloc Note, sur Mac, TextEdit, ou des logiciels de traitement de textes gratuits comme Notepad++, vim ou Sublime Text, par exemple. </li>
+            <li>Enregistrer sous le fichier au format .html dans un dossier créé à cet effet</li>
+            <li>Ouvrir par un double clic le fichier. Une page de votre navigateur web s'ouvre et montre le contenu tel que codé dans le fichier. </li>
+    
+        </ol>
+        <h2>La structure de la page HTML</h2>
+        <p>L’élément <!DOCTYPE> indique que le document actuel appartient à un type spécifique de HTML. Il existe plusieurs versions de HTML, et pour que le navigateur ne soit pas confus et affiche le bon standard, il doit le spécifier.
+    
+            Il existe plusieurs types de < !DOCTYPE>, pour chaque version du langage HTML existe le sien.</p>
+        <img src="structureHTML.PNG" art="structure" height="400" width="800" >
+    
+        <p id="dernier">Le début et la fin du document HTML sont indiqués par les tags < html> </ html>Le tag<strong> < head> </strong> contient d'autres éléments HTML, ainsi que des métadonnées destinées aux moteurs de recherche (méta-titre, description de méta, mots-clés, etc.). Le contenu de ce tag ne s'affiche pas sur la page Web, sauf pour le contenu du tag <strong> < title></strong>, qui définit le titre de la fenêtre de la page Web.Le titre de la page Web est écrit entre les tags d’ouverture <strong>< title> et de fermeture </ title></strong>.
+            
+            L’élément <strong>< body></strong> contient toute information sur la page Web (le texte, les images, les vidéos etc.). L’information est écrite entre le tag d’ouverture <strong>< body> et le tag de fermeture </ body></strong>.
+            
+            Les tags de titre <strong> < h1-h6></strong> sont utilisés pour indiquer les titres de différents niveaux.
+            
+            Il y a 6 niveaux de titres en tout : le tag <strong>< h1></strong> indique le titre le plus important de la page (ne pas confondre avec < title>, où se trouve le titre de la fenêtre de la page Web) et le tag <strong>< h6></strong> le moins important.
+            
+            Considérons ce qui précède avec un exemple:</p>
+            <img src="html.PNG" art="codeHTML" height="400" width="800" ><br>
+    
+        <h3 id="last">Resultat :</h3>
+        <img  src="result.PNG" art="resultat" height="400" width="800" >
+    </div>
+    <footer>
+        <div class="footer">
+            <ul id="ulfoot">
+                <li class="adinfo">
+                    <h1 class="footerH1">ADRAR FORMATION (SIÈGE)</h1>
+                    <p class="p_footer">
+                        2 Rue Irène Joliot Curie Parc Technologique
+                        <br>31520 Ramonville Saint Agne
+                        <br>Tél. : 05 62 19 20 80
+                        <br><a id="e_adrar">adrarinfo@adrar-formation.com</a></p>
+                </li>
+                <br>
+                <div>
+                    <img id="logo"  src="region.webp">
+                </div>
+                <li class="adinfo">
+                    <h1 class="footerH1">ADRAR PÔLE NUMÉRIQUE</h1>
+                    <p class="p_footer">
+                        11 avenue de l'Europe
+                        <br>31520 Ramonville Saint Agne
+                        <br>Tél: 05 34 31 38 10
+                        <br>polenumerique@adrar-formation.com
+                    </p>
+                </li>
+                <li class="adinfo">
+                    <h1 class="footerH1">Contact</h1>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-youtube"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </li>
+                <li class="adinfo">
+                    <a class="link" href="https://www.adrar-formation.com/formations-metiers-numeriques">Pôle Numérique</a>
+                    <br>
+                    <a class="link" href="https://www.adrar-formation.com/contact">Nous contacter</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
