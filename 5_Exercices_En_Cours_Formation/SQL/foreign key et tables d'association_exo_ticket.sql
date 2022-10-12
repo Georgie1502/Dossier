@@ -55,6 +55,16 @@ insert into ajouter (id_article, qtx, id_ticket) values
 
 
  
+UPDATE categorie SET nom_categorie = 'automobile' where nom_categorie = 'Bricolage'; -- where id_categorie=3
 
+UPDATE vendeur SET nom_vendeur = 'Albert' WHERE nom_vendeur = 'Brunet';
+
+UPDATE article SET prix_article = 0.60 WHERE prix_article > 0.40;
+
+UPDATE vendeur SET nom_vendeur= 'Adrar' where prenom_vendeur like '%e%';
+
+UPDATE article SET prix_article = 0.60 WHERE prix_article > 0.50;
+
+UPDATE ticket SET id_vendeur= 4 WHERE date_ticket between '1990/01/01 00:00:00' and '2021/08/30 12:59:59';
 
 
