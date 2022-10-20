@@ -1685,6 +1685,45 @@
 									"activation": {
 										"$ref": "AAAAAAGD6igJgGelvN8="
 									}
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAGD9Gf5x4pa9Hg=",
+									"_parent": {
+										"$ref": "AAAAAAGD6e6QYmVXRfY="
+									},
+									"font": "Arial;13;0",
+									"left": 104,
+									"top": 864,
+									"width": 241,
+									"height": 107,
+									"text": "(4) Scénario alternatif informations incorrectes\n4.1 Le SI indique à l'utilisateur que les informations sont incorrectes\nDans le scénario nominal on considére que les informations sont correctes."
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAGD9IcDl4pp3Vg=",
+									"_parent": {
+										"$ref": "AAAAAAGD6e6QYmVXRfY="
+									},
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 864,
+									"width": 217,
+									"height": 77,
+									"text": "(6)Scénario erreur l'artisane existe déjà. 6.1 Le SI indique à l'utilisateur que les informations existe déjà. Scénario s'arrête à ce point."
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAGD9K5+2Yp3axw=",
+									"_parent": {
+										"$ref": "AAAAAAGD6e6QYmVXRfY="
+									},
+									"font": "Arial;13;0",
+									"left": 352,
+									"top": 944,
+									"width": 249,
+									"height": 81,
+									"text": "(10) Scénario d'erreur le serveur est hors service :\n10.1 Le si indique à l'utilisateur que le serveur est hors service\nle scénario s'arrête à ce point"
 								}
 							]
 						}
@@ -1916,6 +1955,24 @@
 					},
 					"name": "Role3",
 					"type": ""
+				}
+			]
+		},
+		{
+			"_type": "UMLActivity",
+			"_id": "AAAAAAGD9HpwKopfkFg=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Activity1",
+			"ownedElements": [
+				{
+					"_type": "UMLActivityDiagram",
+					"_id": "AAAAAAGD9HpwKopgVKo=",
+					"_parent": {
+						"$ref": "AAAAAAGD9HpwKopfkFg="
+					},
+					"name": "ActivityDiagram1"
 				}
 			]
 		}
