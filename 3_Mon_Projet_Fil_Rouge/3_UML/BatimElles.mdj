@@ -13229,8 +13229,8 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 672,
-							"top": 784,
+							"left": 648,
+							"top": 792,
 							"width": 26,
 							"height": 26
 						},
@@ -13255,8 +13255,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 687,
-									"top": 715,
+									"left": 674,
+									"top": 721,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -13276,8 +13276,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 702,
-									"top": 713,
+									"left": 689,
+									"top": 721,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -13297,8 +13297,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 658,
-									"top": 720,
+									"left": 645,
+									"top": 722,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -13316,7 +13316,7 @@
 								"$ref": "AAAAAAGD5NXJQ/M8jJo="
 							},
 							"lineStyle": 1,
-							"points": "664:665;682:783",
+							"points": "661:665;660:791",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGD5OL1IvWCbyg="
@@ -16238,7 +16238,7 @@
 											"top": 951,
 											"width": 119.9580078125,
 											"height": 13,
-											"text": "La session est crée"
+											"text": "L'artisane est crée"
 										},
 										{
 											"_type": "LabelView",
@@ -16436,8 +16436,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 363,
-									"top": 1028,
+									"left": 371,
+									"top": 1026,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -16457,8 +16457,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 378,
-									"top": 1030,
+									"left": 386,
+									"top": 1026,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -16478,8 +16478,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 334,
-									"top": 1023,
+									"left": 342,
+									"top": 1025,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -16497,7 +16497,7 @@
 								"$ref": "AAAAAAGD8BSjaOs96iA="
 							},
 							"lineStyle": 1,
-							"points": "357:985;342:1079",
+							"points": "359:985;356:1079",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGD8BVugOuPUD0="
@@ -17329,8 +17329,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 566,
-									"top": 819,
+									"left": 570,
+									"top": 813,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -17350,8 +17350,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 581,
-									"top": 820,
+									"left": 585,
+									"top": 813,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -17371,8 +17371,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 537,
-									"top": 816,
+									"left": 541,
+									"top": 814,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -17390,7 +17390,7 @@
 								"$ref": "AAAAAAGD8A/vp+puWJA="
 							},
 							"lineStyle": 1,
-							"points": "555:801;550:847",
+							"points": "557:801;556:839",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAGD8CANGOyJxuo="
@@ -17416,8 +17416,8 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 536,
-							"top": 848,
+							"left": 544,
+							"top": 840,
 							"width": 26,
 							"height": 26
 						},
@@ -18129,7 +18129,7 @@
 							},
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 328,
+							"left": 344,
 							"top": 1080,
 							"width": 26,
 							"height": 26
@@ -19590,7 +19590,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGD8AoJ1+lupaM="
 							},
-							"name": "La session est crée"
+							"name": "L'artisane est crée"
 						},
 						{
 							"_type": "UMLAction",
