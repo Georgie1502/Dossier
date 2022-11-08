@@ -29,3 +29,21 @@ console.log(monH2);
 
 // ? getAttribute pour récuperer la valeur d'un attribut Html d'un élément
 console.log(premierP.getAttribute('class'));
+
+
+//!------------REAGIR AUX EVENT DU DOM--------------
+//? Mode ƒ° => (anonyme + fléchée) 
+let leH1 = document.querySelector('h1');
+leH1.addEventListener('click',()=>{
+    leH1.innerText = 'LOL MDR';
+});
+//? Mode fonction anonyme classique
+leH1.addEventListener('click',function(){
+    leH1.innerText = 'LOL MDR';
+});
+//? la fonction est en dehors
+function maModifTitre(){
+    leH1.innerText = 'LOL MDR';
+}
+//? On apelle la fonction quand click
+leH1.addEventListener('click',maModifTitre());

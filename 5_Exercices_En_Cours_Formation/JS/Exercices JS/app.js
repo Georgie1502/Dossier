@@ -373,6 +373,13 @@ function mentionBac(tabNotes) {
 };
 console.log(mentionBac([13,6,3]));
 
+//!------------REAGIR AUX EVENT DU DOM--------------
+let leH1 = document.querySelector('h1');
+leH1.addEventListener('click',()=>{
+    leH1.innerText = 'LOL MDR';
+});
+console.log(leH1);
+
 
 
 
