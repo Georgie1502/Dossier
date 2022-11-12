@@ -339,7 +339,41 @@ monTxt.addEventListener('keyup',function(){
 // TODO 5-3: setItem() prend en 1er param "monSuperTexte", et en 2e param la valeur contenue dans monTxt
 // TODO 5-4: on assigne au innerHTML de rendu la valeur contenue dans monTxt
 
+/*if (monTxt.value){
 
-monTxt.value= localStorage.getItem("monSuperTexte");
-if =true 
-rendu.innerHTML
+rendu.innerText= localStorage.getItem("monSuperTexte");}
+
+  
+
+monTxt.addEventListener("keyup",function(){
+
+localStorage.setItem('monSuperText', monTxt.value);
+
+
+rendu.innerHTML=marked(monTxt.value);
+});
+*/
+
+// const monTxt = document.querySelector("textarea");
+// const rendu = document.querySelector("div");
+//On va pré remplir le textarea avec ce que l'on récupère dans le localStorage
+monTxt.value = localStorage.getItem('monSuperTexte');
+//Si monTxt.value est définit alors on rempli la Div avec ce qu'on récupère dans le local storage
+if(monTxt.value){
+    rendu.innerText = localStorage.getItem('monSuperTexte');
+};
+//On détecte ce que tape l'utilisateur dans le textarea
+monTxt.addEventListener("keyup", function() {
+//On enregistre ce que tape l'utilisateur dans le localStorage sous le nom "monSuperTexte"
+localStorage.setItem('monSuperTexte',monTxt.value);
+//On affiche ce que tape l'utilisateur traduit en marked dans la div     
+    rendu.innerHTML =marked(monTxt.value);
+});
+
+//!------------Supprimer un listener d'evenements--------------
+const leLink = document.querySelector('a');
+function monClic(){
+    console.log('Hello Ca Clique');
+    leLink.removeEventListener('click',monClic);
+};
+leLink.addEventListener('click',monClic);
