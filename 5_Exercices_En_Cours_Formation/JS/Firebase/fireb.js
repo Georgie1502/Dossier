@@ -36,12 +36,13 @@ function readUserData(){
     let userListUI = document.getElementById("user-list");
     usersRef.on("value",(snap)=>{
         userListUI.innerHTML="",
-        let snap = array.forEach(childSap => {
+        let snap.forEach(childSap => {
             let key=childSap.key;
             let value= childSap.val();
             let $li=document.createElement("li");
             $li.innerHTML=value.name;
-            $li.append(user-key)
+            $li.setAttribute('user-key',key);
+            userListUI.append($li);
             
         });
             
