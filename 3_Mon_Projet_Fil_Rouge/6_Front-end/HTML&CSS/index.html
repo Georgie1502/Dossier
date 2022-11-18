@@ -4,12 +4,15 @@
     <script src="https://kit.fontawesome.com/660a9d6ead.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil</title>
     <link href="index.css" rel="stylesheet">
+    
+</head>
 </head>
 <body>
     <header>
+        <!-- *********************************Menu*************************************** -->
         <nav>
             
                     <label for="toggle">☰</label>
@@ -30,27 +33,115 @@
 
         </nav>
     </header>
-
+    
     <main>
+<!-- *********************************RECHERCHE*************************************** -->
+        <section classe="titres">
 
+            <div class="titres">
+                <h1> Le batiment par et pour les femmes</h1>      
+            </div>
+
+        </section>
 
         <section class="recherche">
-        
+           
             <div class="search">
+                
                 <input type="text" placeholder="Par exemple : Plomberie" required>
-                <div class="lupe"> 
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+                    <div class="lupe"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
 
-            </div>
-            
+            </div> 
             
         </section>
+<!-- *********************************Expertises*************************************** -->
+
+        <section class="expertises">
+            <h2>Retrouvez les expertises de nos Artisanes </h2>
+            
+            <div class="images">
+             
+                <img src="./Images/diagnostic-plomberie-immobilier.jpg" alt="femme Plomberie">
+           
+                <img src="./Images/plâtrière-plaquiste.jpg" alt="femme plâtrière-plaquiste">
+            
+                <img src="./Images/Electriciennes.jpg"  alt="femme Electriciennes">
+            </div>
+
+            
+            <div class="phictures">
+                <img src="./Images/carpintera.jpg" alt="Femme charpentiere " >
+           
+                <img src="./Images/1.webp" alt="femme plâtrière-plaquiste">
+            
+                <img src="./Images/2.webp"  alt="femme Electriciennes">
+           
+            </div>
+
+        </section>
+ <!-- *********************************Formulaire*************************************** -->
+        <section class="formulaire">
+            <div class="commentaires">
+                <h2>Rejoignez dès aujourd'hui le réseau de Batim’elles.</h2>
+                <img src="./Images/artisanes.jpeg" alt="Femmes sororite " >
+                <p>Nous vous aidons à vous faire connaître, à fidéliser vos clients et à vous épanouir dans votre métier.</p>
+            </div>
+
+           
+
+            <form  method="POST" action="monProgramme.php">
+
+                <h2>Rejoindre la communauté</h2>
+               
+                <fieldset>
+                <legend>Soyez actrices du changement !</legend>
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" placeholder="Entrez votre Nom" maxlength="20" id="nom" required>
+
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" placeholder="Entrez votre Préom" maxlength="20" id="prenom" required>
+
+                <label for="telephone">Téléphone:</label>
+                <input type="tel" name="telephone" placeholder="Entrez votre Téléphone" maxlength="20" id="telephone" required>
+
+                <label for="mail">Mail:</label>
+                <input type="email" name="mail" placeholder="Entrez votre email" maxlength="20" id="email" required>
+
+                <label for="activite">Activité:</label>
+                <input type="text" name="activite" placeholder="Entrez votre Activité" maxlength="20" id="activite" required>
+
+                <label for="ville">Ville:</label>
+                <input type="text" name="ville" placeholder="Entrez votre ville" maxlength="20" id="ville" required>
+
+                <label for="file">Photos de vos realisation (5 max, jpg ou pdf)* </label>
+                <input type="file" accept=".png, .jpg, gif" multiple required>
+
+
+                <label for="textarea">Parcours </label>
+                <textarea placeholder="Parcours" required ></textarea>
+            </fieldset>
+
+
+
+
+
+
+            </form>
+
+        </section>
+
+        
+
+
+
+       
 
 
     </main>
 
-    <!--footer  -->
+    <!--***********************************************************footer  -->
    
     <footer class="footer-distributed">
 
@@ -72,6 +163,9 @@
                 <a href="#">Blog</a>
                 
                 <a href="#">Contact</a>
+
+                <a href="#">Politique de privacité</a>
+                <a href="#">Mentions légales</a>
             </p>
 
             <p class="footer-company-name">Batim'Elles © 2022</p>
@@ -115,7 +209,7 @@
         </div>
 
     </footer>
-    
-    
+  
+
 </body>
 </html>
