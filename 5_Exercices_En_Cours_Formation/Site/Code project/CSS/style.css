@@ -1,0 +1,350 @@
+/* TENTATIVE DE RESPONSIVE DESIGN POUR IPHONE XR */
+/*@media all and (max-width:414px) {
+
+    #logo{  
+        width: 30%;
+    }
+
+    nav ul li{
+        
+    }
+}*/
+
+@media screen and (max-width: 480px){
+    header{
+        height: auto;
+    }
+    main{
+        width: auto;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #horaires{
+        display: flex;
+        
+    }
+}
+
+
+/* RESET CSS */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* REMOVE ALL DECORATION ON LINKS */
+a{
+    text-decoration: none;
+}
+
+
+a:visited{
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+/* SETUP HEADER */
+
+/* SET UP BACKGROUND COLOR FOR HEADER */
+header{
+    background-color: #CADCFF;
+}
+
+
+/* REDUCING SIZE OF LOGO */
+#logo{
+    width: 40%;
+}
+
+/* NAVBAR SETUP */
+nav{
+    display:flex ;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    justify-content: space-between;
+}
+
+
+ul{
+    display: flex;
+    gap: 2vh;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    flex-direction: row;
+    font-family: 'Katibeh', cursive;
+    font-size: x-large;
+    color: #333333;
+
+}
+
+p{
+    font-family: 'Simonetta', cursive;
+}
+
+/* FOOTER */
+footer{
+    font-family:'Simonetta', cursive ;
+}
+
+
+footer section{
+    background-color: #CADCFF;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15vh;
+    padding-right: 15vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.footer h2{
+    padding-bottom: 2vh;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.footer div{
+    padding-top: 2vh;
+    justify-content: flex-end;
+}
+
+
+.footer div p{
+    padding-bottom: 6vh;
+}
+
+
+/* AJUSTING FOOTERS LOGO*/
+#logoTel{
+    width:5%;
+    padding-left: 3vh;
+}
+
+#logoMail{
+    width: 5%;
+    padding-left: 3vh;
+}
+
+#logoAdress{
+    width:5%;
+    padding-left: 3vh;
+}
+
+
+
+/* MAIN  */
+
+h1{
+    font-size: xx-small;
+}
+
+
+main{
+    width: 80vw;
+    padding: 100px;
+    margin: auto;
+   margin-bottom: 5px;
+}
+/******************* DEBUT SECTION 1************************/
+ .section1{
+    display: flex;
+    font-size: 2vw;
+ }
+
+
+ .section1 p{
+    font-size: 25px;
+ }
+
+
+ .section1 h1{
+    line-height: 2em;
+ }
+
+
+ hr{
+    background-color :#CADCFF; 
+    height: 2px;
+    border: none;
+ }
+
+
+h1,h2 {
+    color :brown;
+    font-size: 3vh;
+    line-height: 2em;
+    
+}
+
+
+#horaires{
+    font-size: 30px;
+    margin-top: 30px;
+  
+   
+}
+
+
+#chaise{
+    width : 400px;
+    height : 400px; 
+   
+}
+
+
+#chaiseEtNum{
+    color :brown;
+    font-size: 30px;
+    padding-left: 20vh;
+
+}
+
+/*-- FIN SECTION 1 */
+
+/*PARTIE TROUVE LE SALON AVEC IFRAME*/
+
+iframe{
+    margin-top: 20px;
+    border-radius: 10%;
+    width : 700px;
+    height : 400px;
+    margin-bottom:20px ;
+}
+#adresse{
+    font-size: 30px;
+    padding-left: 3%;
+ }
+
+
+ #adresse p{
+    line-height: 6vh;
+    padding-top: 5vh;
+ }
+
+
+
+ #ouTrouver{
+    display: flex;
+    font-size: 1.5em;
+    margin-top: 5%;
+    padding: 5%;
+ }
+
+#ouTrouver p{
+    font-size: 25px;
+}
+
+/* FIN PARTIE TROUVE LE SALON AVEC IFRAME*/
+
+/*DEBUT SECTION A PROPOS DU SALON*/
+
+.section2{
+    display: flex;
+    line-height: 1.3em;
+    padding-left: 5%;
+    font-size: 30px;
+    
+}
+
+.section2 p{
+    font-size: 25px;
+}
+
+#grandPere{
+    width : 500px;
+    height : 500px; 
+    border-radius: 20px;
+    margin-left: 15vh;
+    margin-bottom: 6vh;
+}
+
+/*FIN SECTION A PROPOS DU SALON */
+
+#salon{
+    margin-top: 3%;
+    width : 100%;
+    height : 700px; 
+    border-radius: 20px;
+
+  
+   
+}
+
+#titre {
+    text-align: center;
+    padding-top: 3vh;
+}
+
+
+#divRappel{
+    position:relative;
+}
+
+#rappelRouge1{
+    position: absolute;
+    width: 100vw;
+    margin-left: 5em;
+    z-index: -10;
+}
+
+
+#rappelRouge2{
+    position: absolute;
+    width:100vw;
+    margin-left: -20em;
+    z-index: -10;
+}
+
+
+#rappelRouge3{
+    position: absolute;
+    width: 15vw;
+    z-index: -10;
+    margin-left: -20em;
+    margin-top: -2em;
+}
+
+#rappelBleue1{
+    position:absolute;
+    width: 20vw;
+    z-index: -10;
+    margin-left: 76em;
+    margin-top: 14em;
+}
+
+#rappelBleue2{
+    position:absolute;
+    width: 25vw;
+    z-index: -10;
+    margin-top: -10em; 
+    margin-left: -55em;
+    transform: rotate(45deg);
+}
+
+
