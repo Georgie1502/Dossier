@@ -246,6 +246,13 @@ for ( $i=0; $i<6; $i++ ){
     echo "<br>". $i;
 }
 
+/*Methode while  :
+    $i=1;
+    while($i<=5){
+        echo"<br>$i;
+        $i++;
+    }
+*/
 ?> 
 <h2> Exo 9 </h2>
 <?php
@@ -254,15 +261,22 @@ for ( $i=0; $i<6; $i++ ){
 suivants. Par exemple, si la valeur de nbr équivaut à : 17, la fonction affichera les nombres de 18 à 27 (méthode
 echo).*/
 
-function cat($nb){
+/*function cat($nb){
     
-         for ($i=18; $i<28; $i++ ){
+         for ($i=($nbr+1); $i<=($nbr+10); $i++ ){
             echo "<br>".$i;
         }
     }
 
  cat( 17);
- cat (5);
+ cat (5);*/
+
+ function compteur1($nbr){
+    for($i=($nbr+1); $i<=($nbr+10); $i++){
+        echo "<br>$i";
+    }
+}
+compteur1(17);
 ?>
 
 
