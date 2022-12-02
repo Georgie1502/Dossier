@@ -87,11 +87,25 @@ if(isset($_FILES['file']) and
  isset($_POST['name_user']) and $_POST['name_user'] != ""
  isset($_POST['password']) and $_POST['password'] != ""){
    
+    //chemin temporaire $tmp_name 
     $tmp_name = $_FILES['file']['tmp_name'];
     $nameU = $_FILES['file']['name'];
 
     $password=$_POST['password'];
     $user=$_POST['name_user'];
+
+    //recuperation de l'extension du fichier 
+    $fichier= new SplFileInfo($name);
+    $ext= $fichier -> getExtension();
+
+    if ($ext == "jpg" or $ext =="png" or $ext =="gif"){
+        echo 'test';
+    }else{
+        echo "<p>ERROR : format de fichier non valide.</p>";
+    }
+    }else {
+        echo "<p>ERROR : formulaire mal completé.</p>"
+    }
 
 
 
