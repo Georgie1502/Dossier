@@ -69,4 +69,5 @@ function deleteUser($bdd,$tabUsers){
         die('Erreur : '.$error->getMessage());
         }
 }
+
 ?>
