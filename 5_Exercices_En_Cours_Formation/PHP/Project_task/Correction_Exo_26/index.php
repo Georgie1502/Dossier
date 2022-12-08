@@ -4,16 +4,16 @@
     include('utils/connect.php');
     include('model/model_user.php');
 
-    if(isset($_POST['name_users']) and $_POST['name_users']!=""
-    and isset($_POST['first_name_users']) and $_POST['first_name_users']!=""
-    and isset($_POST['login_users']) and $_POST['login_users']!=""
-    and isset($_POST['mdp_users']) and $_POST['mdp_users']!=""){
-        $name_users = $_POST['name_users'];
-        $first_name_users = $_POST['first_name_users'];
-        $login_users = $_POST['login_users'];
-        $mdp_users = $_POST['mdp_users'];
+    if(isset($_POST['name_user']) and $_POST['name_user']!=""
+    and isset($_POST['first_name_user']) and $_POST['first_name_user']!=""
+    and isset($_POST['login_user']) and $_POST['login_user']!=""
+    and isset($_POST['mdp_user']) and $_POST['mdp_user']!=""){
+        $name_user = $_POST['name_user'];
+        $first_name_user = $_POST['first_name_user'];
+        $login_user = $_POST['login_user'];
+        $mdp_user = $_POST['mdp_user'];
 
-        $user = new User('', $name_users, $first_name_users, $login_users, $mdp_users);
+        $user = new User('', $name_user, $first_name_user, $login_user, $mdp_user);
         //var_dump($user);
 
         $message = $user->insertUser($bdd);
@@ -24,12 +24,12 @@
     $user = new User("","","","","");
 
     //affichageUser($bdd);
-    $data = $user->afficherUsers($bdd);
+    $data = $user->afficherUser($bdd);
     $list_users='';
     $list_users_checkbox='';
     foreach ($data as $row){
-        $list_users=$list_users.'<p>Nom : '.$row['name_users'].' Prénom : '.$row['first_name_users'].' Login : '.$row['login_users'].'.</p>';
-        $list_users_checkbox=$list_users_checkbox."<li><input type='checkbox' name='box[]' value='".$row['id_users']."'>Login : ".$row['login_users'].".</li>";
+        $list_users=$list_users.'<p>Nom : '.$row['name_user'].' Prénom : '.$row['first_name_user'].' Login : '.$row['login_user'].'.</p>';
+        $list_users_checkbox=$list_users_checkbox."<li><input type='checkbox' name='box[]' value='".$row['id_user']."'>Login : ".$row['login_user'].".</li>";
 
     }
 
@@ -43,7 +43,7 @@
         //boucle pour supprimer chaque user coché
         foreach($tabUsers as $row){
             //On passe l'Id à notre User en cours
-            $user->setIdUsers($row);
+            $user->setIdUser($row);
             //appel de la méthode qui supprime un user
             $user->deleteUser($bdd);
         }
@@ -55,7 +55,7 @@
 echo'<script>
             let list_users = document.querySelector("#list_users");
             list_users.innerHTML="'.$list_users.'";
-            let list_users_checkbox = document.querySelector("#users");
+            let list_users_checkbox = document.querySelector("#user");
             list_users_checkbox.innerHTML="'.$list_users_checkbox.'";
      </script>';
 ?>

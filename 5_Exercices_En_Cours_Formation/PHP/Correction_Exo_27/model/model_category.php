@@ -10,49 +10,45 @@
             $this->name_cat = $name_cat;
         }
 
-        //GETTER SETTER
-        public function getname_cat(){
-        return $this->name_cat;
-        }
-
-        public function getid_cat(){
+        //GETTER et SETTER
+        public function getIdCat(){
             return $this->id_cat;
         }
-
-        public function setname_cat($name_cat){
-        $this->name_cat = $name_cat;
+        public function getNameCat(){
+            return $this->name_cat;
         }
 
-        public function setid_cat($id_cat){
-        id$this->id_cat = $id_cat;
+        public function setIdCat($id_cat){
+            $this->id_cat = $id_cat;
         }
-
-
-        //Methode
-
-        public function insertCategory($bdd){
-            //Récupérer les attributs à enregister
+        public function setNameCat($name_cat){
+            $this->name_cat = $name_cat;
+        }
+        
+        //METHODE
+        //méthode pour enregistrer une category
+        public function ajoutCat($bdd){
             $name_cat = $this->getNameCat();
 
-            try {
+            try{
                 //Requête préparée
-                $req = $bdd->prepare('insert into category (name_cat) values(?)');
+                $req = $bdd->prepare('insert into category (name_cat) values (?)');
 
-                //Binding de Paramètre
+                //Binding de Param
                 $req->bindParam(1,$name_cat,PDO::PARAM_STR);
-            
 
-                //Exécution de la Requête
+                //Exécuter la requête
                 $req->execute();
 
-                //Message de validation
-                return $name_cat.' a bien été enregistré en BDD.';
-                }
-                catch(Exception $error){
-                die('Error :'.$error->getMessage());
-                }
+                //Retourner un message de confirmation
+                return 'La catégorie : '.$name_cat.' a bien été ajouté.';
+
+            }catch(Exception $error){
+                die('Error : '.$error->getMessage());
+            }
         }
-            //Méthode pour afficher l'ensemble des utilisateurs : renvoie un tableau de l'ensemble de mes utilisateurs
+
+        //Méthode pour afficher l'ensemble des catégories : renvoie un tableau de l'ensemble de mes catégories
         public function afficherCategory($bdd){
             try{
                 //Requête préparée
@@ -71,13 +67,6 @@
                 die('Error :'.$error->getMessage());
             }
         }
-
-        
-
-
-        }
-
-    
-    
+    }
 
 ?>

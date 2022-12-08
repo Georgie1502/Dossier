@@ -5,7 +5,7 @@
         private $nom_task;
         private $content_task;
         private $date_task;
-        private $id_users;
+        private $id_user;
         private $id_cat;
 
         //Constructeur
@@ -14,7 +14,7 @@
             $this->nom_task = $nom_task;
             $this->content_task = $content_task;
             $this->date_task = $date_task;
-            $this->id_users = $id_users;
+            $this->id_user = $id_user;
             $this->id_cat = $id_cat;
         }
         //GETTER SETTER
@@ -27,7 +27,7 @@
         }
 
         public function getid_users(){
-            return $this->id_users;
+            return $this->id_user;
         }
 
         public function getnom_task(){
@@ -53,8 +53,8 @@
         }
 
 
-        public function setid_users($id_users){
-            $this->id_users = $id_users;
+        public function setid_user($id_user){
+            $this->id_user = $id_user;
         }
 
 
