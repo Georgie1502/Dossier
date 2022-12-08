@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h3>Inscription</h3>
     <form action="" method="post">
         <input type="text" name="name_users" placeholder="entrez votre nom">
         <input type="text" name="first_name_users" placeholder="entrez votre prénom">
@@ -17,7 +18,7 @@
 
     <div id='message'></div>
 
-    <h3>Liste des Utilisateurs</h3>
+    <!-- <h3>Liste des Utilisateurs</h3>
     <div id='list_users'></div>
 
     <div id='message'></div>
@@ -32,6 +33,6 @@
         <input type="submit" value="Supprimer">
     </form>
 
-    <div id='message_delete'></div>
+    <div id='message_delete'></div> -->
 
 

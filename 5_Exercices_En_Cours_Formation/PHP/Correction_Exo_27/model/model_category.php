@@ -66,7 +66,7 @@
             catch(Exception $error){
                 die('Error :'.$error->getMessage());
             }
-        }
+        }*/
     }
 
 ?>

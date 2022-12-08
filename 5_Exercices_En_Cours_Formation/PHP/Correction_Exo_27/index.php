@@ -6,22 +6,7 @@
     include('model/model_category.php');
     include('model/model_task.php');
 
-    if(isset($_POST['name_users']) and $_POST['name_users']!=""
-    and isset($_POST['first_name_users']) and $_POST['first_name_users']!=""
-    and isset($_POST['login_users']) and $_POST['login_users']!=""
-    and isset($_POST['mdp_users']) and $_POST['mdp_users']!=""){
-        $name_users = $_POST['name_users'];
-        $first_name_users = $_POST['first_name_users'];
-        $login_users = $_POST['login_users'];
-        $mdp_users = $_POST['mdp_users'];
-
-        $user = new User('', $name_users, $first_name_users, $login_users, $mdp_users);
-        //var_dump($user);
-
-        $message = $user->insertUser($bdd);
-        echo $message;
-    }
-
+    
     //création de notre objet user :
     $user = new User("","","","","");
 
@@ -54,7 +39,7 @@
         echo'Les utilisateurs ont été supprimé.';
     }
 
-    //FORMULAIRE AJOUT CATEGORY
+    /*/FORMULAIRE AJOUT CATEGORY
     include('vue/vue_category.php');
 
     if(isset($_POST['name_cat']) and $_POST['name_cat']!=""){
@@ -68,7 +53,7 @@
         $message = $category->ajoutCat($bdd);
 
         //affichage du message retourner
-        echo $message;
+        echo $message;*/
     }
 
     //FORMULAIRE AJOUT TASK
@@ -118,14 +103,14 @@
 
     }    
 
-echo'<script>
+/*echo'<script>
             let list_users = document.querySelector("#list_users");
             list_users.innerHTML="'.$list_users.'";
             let list_users_checkbox = document.querySelector("#users");
             list_users_checkbox.innerHTML="'.$list_users_checkbox.'";
             let select = document.querySelector("#select_cat");
             select.innerHTML = "'.$list_cat.'";
-     </script>';
+     </script>';*/
 ?>
 </body>
 </html>

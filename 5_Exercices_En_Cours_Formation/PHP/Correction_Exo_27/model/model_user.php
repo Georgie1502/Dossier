@@ -99,7 +99,7 @@
             }
         }
 
-        //Méthode pour sélectionner un utilisateur à partir de son Login
+        /*/Méthode pour sélectionner un utilisateur à partir de son Login
         public function selectUsersFromLogin($bdd){
             $login_users = $this->getLoginUsers();
             try{
@@ -120,10 +120,34 @@
             }
             catch(Exception $error){
                 die('Error :'.$error->getMessage());
-            }
+            }*/
+            public function selectUtilisateurFromLogin($bdd){
+                //Je stocke le login de l'utilisateur recherché
+                $login_utilisateur = $this->getLoginUsers();
+        
+                //Try-catch de la requête
+                try{
+                    //Requête préparée
+                    $req = $bdd->prepare('select * from users where login_users = ?');
+        
+                    //Binding de Paramètre
+                    $req->bindParam(1,$login_utilisateur,PDO::PARAM_STR);
+        
+                    //Exécuter la requête
+                    $req->execute();
+        
+                    //Récupérer la réponse de la BDD dans une variable $data
+                    $data = $req->fetchAll();
+        
+                    //Retourne $data pour le controler
+                    return $data;
+        
+                }catch(Exception $error){
+                    die('Error : '.$error->getMessage());
+                }
         }
 
-        //Méthode pour supprimer un utilisateur
+        /*//Méthode pour supprimer un utilisateur
         public function deleteUser($bdd){
             $id_users = $this->getIdUsers();
             try{
@@ -142,6 +166,6 @@
             catch(Exception $error){
                 die('Error :'.$error->getMessage());
             }
-        }
+        }*/
     }
 ?>
