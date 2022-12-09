@@ -11,12 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="accueil.php">Accueil</a></li>
-                <li><a href="category.php">Category</a></li>
-                <li><a href="Task.php">Task</a></li>
-                <li><a href="compte.php">Profil</a></li>
-                <li><a href="deconnexion.php">Déconnexion</a></li>
-                
+                <li><a href="controler_accueil">Accueil</a></li>
+                <li><a href="controler_compte">Compte</a></li>
+                <li><a href="controler_deconnexion">Déconnexion</a></li>
             </ul>
         </nav>
     </header>

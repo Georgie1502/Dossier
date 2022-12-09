@@ -1,5 +1,4 @@
-
-<body>
+    <!--Formulaire d'inscription-->
     <h3>Inscription</h3>
     <form action="" method="post">
         <input type="text" name="name_users" placeholder="entrez votre nom">
@@ -11,21 +10,14 @@
 
     <div id='message'></div>
 
-    <!-- <h3>Liste des Utilisateurs</h3>
-    <div id='list_users'></div>
-
-    <div id='message'></div>
-
-    <h3>Liste des Utilisateurs</h3>
-    <div id='list_users'></div>
-
-    <h3>EXERCICE BONUS</h3>
+    <!--Formulaire d'inscription-->
+    <h3>Connexion</h3>
     <form action="" method="post">
-        <ul id='users'>
-        </ul>
-        <input type="submit" value="Supprimer">
+        <input type="text" name="login_users_connexion" placeholder="entrez votre identifiant">
+        <input type="text" name="mdp_users_connexion" placeholder="entrez votre mot de passe">
+        <input type="submit" value="Se Connecter">
     </form>
 
-    <div id='message_delete'></div> -->
+    <div id='message_connexion'></div>
 
 

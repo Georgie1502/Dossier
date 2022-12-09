@@ -53,8 +53,8 @@
         $message = $category->ajoutCat($bdd);
 
         //affichage du message retourner
-        echo $message;*/
-    }
+        echo $message;}*/
+    
 
     //FORMULAIRE AJOUT TASK
     include('vue/vue_task.php');
