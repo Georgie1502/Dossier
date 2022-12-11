@@ -83,8 +83,14 @@ label, #toggle
 }
 
 /****************************************************** Recherche ******************************************************************************/
-.titres{
-    text-decoration: underline white;;
+/* .titres{
+    
+    background-image:"./Images/diagnostic-plomberie-immobilier.jpg";
+  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+
+#premier {
+    /* text-decoration: none;
     display: flex;
     flex-direction: column;
     justify-content:center; 
@@ -94,19 +100,23 @@ label, #toggle
     line-height: 3em;
     font-size: 20px;
     color: #648BB3;
-  
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-.recherche {
-    display: flex;
-    
-   
-    justify-content: center;
     height: 30vh;
+    background-image: "./Images/diagnostic-plomberie-immobilier.jpg"; */
+margin-top: 5vh;
+margin-bottom: 5vh;
+
 }
-.search{
+.recherche{
+    background-image: "./Images/diagnostic-plomberie-immobilier.jpg";
+}
+
+div .search{
     position: absolute;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 
 }
 .search input{
@@ -122,7 +132,7 @@ label, #toggle
 .lupe{
     
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     background-color:#E2EAC4;
     width: 50px;
@@ -132,11 +142,13 @@ label, #toggle
     color: #648BB3;
     font-size: 25px;
     border-radius: 50%;
-    margin: 0.50rem 0.60rem 0.80rem 0rem;
+    margin: 0.80rem 0.80rem 0.90rem 70rem;
     border:0;
 }
 
-
+.titre{
+    background-image: "./Images/diagnostic-plomberie-immobilier.jpg";
+}
 
 /****************************************************** Expertises******************************************************************************/
 .images, .phictures{
@@ -168,6 +180,40 @@ label, #toggle
 
    }
 
+/****************************Formulaire***************************************/
+section.formulaire{
+    display: flex;
+    margin-bottom: 40vh;
+    margin-top: 5vh;
+    background-color: #E2EAC4;
+}
+div.commentaires{
+    background-color: #E2EAC4;
+}
+form{
+    height: 2em;
+    padding: 5px 10px;
+    display: flex;
+    
+       
+    
+}
+input, textarea, input[type="file"]{
+    padding: 10px;
+    margin: 5px;
+  
+    
+}
+textarea{
+    
+}
+
+fieldset{
+    height: 400px;
+    background-color: #E9BED0;
+   
+    
+}
 /****************************Foooter***************************************/
 
 /*footer*/
