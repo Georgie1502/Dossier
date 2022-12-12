@@ -2,7 +2,7 @@
 //CONTROLLER
     session_start();
     include('utils/connect.php');
-    include('model/model_user.php');
+    include('manager/manager_user.php');
     include('vue/header.php');
     include('vue/vue_user.php');
 

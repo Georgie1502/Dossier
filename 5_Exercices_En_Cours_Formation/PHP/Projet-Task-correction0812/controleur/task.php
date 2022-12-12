@@ -1,8 +1,8 @@
 <?php
     session_start();
     include('utils/connect.php');
-    include('model/model_task.php');
-    include('model/model_category.php');
+    include('manager/manager_task.php');
+    include('manager/manager_category.php');
     include('vue/header.php');
 
         if(isset($_SESSION['connexion'])){
