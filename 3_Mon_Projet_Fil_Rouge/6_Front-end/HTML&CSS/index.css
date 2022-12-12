@@ -107,7 +107,7 @@ margin-bottom: 5vh;
 
 }
 .recherche{
-    background-image: "./Images/diagnostic-plomberie-immobilier.jpg";
+    background-image: url("./Images/diagnostic-plomberie-immobilier.jpg");
 }
 
 div .search{
