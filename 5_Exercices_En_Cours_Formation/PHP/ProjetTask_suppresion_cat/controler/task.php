@@ -11,7 +11,7 @@
             //AJOUT TASK
             //1) Insérer la liste des catégorie dans mon input SELECT
             //A) Création de l'objet catégorie pour récupérer la liste
-            $list_cat = new managerCategory("","");
+            $list_cat = new ManagerCategory("","");
 
             //B) Faire la requête SELECT toute la liste des catégories, et la récupérer dans $data qui est un tableau
             $data = $list_cat->afficherCategory($bdd);
@@ -43,7 +43,7 @@
                     $id_users = $_SESSION['id_users'];
 
                     //Crée ma task qui va s'enregistrer en BDD
-                    $task = new managerTask("",$nom_task,$content_task,$date_task,$id_users,$id_cat);
+                    $task = new ManagerTask("",$nom_task,$content_task,$date_task,$id_users,$id_cat);
 
                     //Requête d'enregistrement et récupération de la réponse de la BDD dans $message
                     $message_task = $task->ajoutTask($bdd);
@@ -65,20 +65,30 @@
             //2) Requête pour avoir l'ensemble des task et récupération de la réponse dans $data qui est un tableau
             //3) Foreach sur $data pour afficher chaque ligne
 
-            echo "<h3>Liste des Tasks</h3><ul>";
+            echo "<h3>Liste des Tasks</h3><form action='' method='post'>";
 
             //ETAPE 1 : création de l'objet task
-            $list_task= new managerTask("","","","",$_SESSION['id_users'],"");
+            $list_task= new ManagerTask("","","","",$_SESSION['id_users'],"");
 
             //ETAPE 2 : requête Select et récupération de la liste dans $data
             $data = $list_task->afficherTask($bdd);
 
             //ETAPE 3 : afficher chaque ligne de $data
             foreach($data as $row){
-                echo "<li>".$row["nom_task"]." : ".$row["content_task"]." - DATE : ".$row["date_task"]."</li>";
+                echo "<p><input type='checkbox' name='box[]' value='".$row["id_task"]."'>".$row["nom_task"]." : ".$row["content_task"]." - DATE : ".$row["date_task"]."</p>";
             }
 
-            echo "</ul>";
+            echo "<input type='submit' value='Supprimer'></form>";
+
+            if(isset($_POST['box'])){
+                $tabTask = $_POST['box'];
+    
+                foreach($tabTask as $id_task){
+                    $task = new ManagerTask($id_task,"","","","","");
+                    $task->deleteTask($bdd);
+                }
+                header('Location:http://localhost/Jour%2011/Projet%20Task/task');
+            }
 
 
         }else{
@@ -86,50 +96,4 @@
         }
 
     include('vue/footer.php');
-
-    //AJOUT TASK
-
-    //Récupérer l'id_cat
-    //injecter dans la vue une liste déroulante avec des options dont l'attribut Value sera égal à l'id de lacatégorie
-    //1) requête pour seclect toutes mes catégories
-   /* $category = new Category("","");
-    $data_cat = $category->afficherCategory($bdd);
-
-    //2) Inject le conde grâce à JS dans mon <Select>
-    $list_cat = '';
-    foreach ($data_cat as $row){
-        $list_cat=$list_cat."<option value=".$row['id_cat'].">".$row['name_cat']."</option>";
-    }
-
-    if(isset($_POST['nom_task']) and $_POST['nom_task']!=""
-    and isset($_POST['content_task']) and $_POST['content_task']!=""
-    and isset($_POST['date_task']) and $_POST['date_task']!=""
-    and isset($_POST['login_users_task']) and $_POST['login_users_task']!=""
-    and isset($_POST['id_cat']) and $_POST['id_cat']!=""){
-        //Récupération de mes données
-        $nom_task = $_POST['nom_task'];
-        $content_task = $_POST['content_task'];
-        $date_task = $_POST['date_task'];
-        $login_users_task = $_POST['login_users_task'];
-        $id_cat = $_POST['id_cat'];
-
-        //Récupérer l'id_users
-        $user1 = new User("","","",$login_users_task,"");
-        $data = $user1->selectUsersFromLogin($bdd);
-        $id_users;
-        foreach($data as $row){
-            $id_users = $row['id_users'];
-        }
-
-
-        //Création de notre objet task
-        $task = new Task("",$nom_task,$content_task,$date_task,$id_users,$id_cat);
-
-        //Enregistrement de la task
-        $message = $task->ajoutTask($bdd);
-
-        //Message de confirmation
-        echo $message;
-
-    }*/
 ?>

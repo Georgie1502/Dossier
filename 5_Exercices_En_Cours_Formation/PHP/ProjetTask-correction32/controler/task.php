@@ -1,8 +1,8 @@
 <?php
     session_start();
     include('utils/connect.php');
-    include('manager/manager_task.php');
-    include('manager/manager_category.php');
+    include('model/model_task.php');
+    include('model/model_category.php');
     include('vue/header.php');
 
         if(isset($_SESSION['connexion'])){
@@ -11,7 +11,7 @@
             //AJOUT TASK
             //1) Insérer la liste des catégorie dans mon input SELECT
             //A) Création de l'objet catégorie pour récupérer la liste
-            $list_cat = new managerCategory("","");
+            $list_cat = new Category("","");
 
             //B) Faire la requête SELECT toute la liste des catégories, et la récupérer dans $data qui est un tableau
             $data = $list_cat->afficherCategory($bdd);
@@ -43,7 +43,7 @@
                     $id_users = $_SESSION['id_users'];
 
                     //Crée ma task qui va s'enregistrer en BDD
-                    $task = new managerTask("",$nom_task,$content_task,$date_task,$id_users,$id_cat);
+                    $task = new Task("",$nom_task,$content_task,$date_task,$id_users,$id_cat);
 
                     //Requête d'enregistrement et récupération de la réponse de la BDD dans $message
                     $message_task = $task->ajoutTask($bdd);
@@ -68,7 +68,7 @@
             echo "<h3>Liste des Tasks</h3><ul>";
 
             //ETAPE 1 : création de l'objet task
-            $list_task= new managerTask("","","","",$_SESSION['id_users'],"");
+            $list_task= new Task("","","","",$_SESSION['id_users'],"");
 
             //ETAPE 2 : requête Select et récupération de la liste dans $data
             $data = $list_task->afficherTask($bdd);

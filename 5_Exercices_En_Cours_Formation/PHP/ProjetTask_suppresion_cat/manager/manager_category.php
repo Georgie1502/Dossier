@@ -1,10 +1,7 @@
 <?php
-
-include ("model/model_category.php");
-
-class managerCategory extends Category {
-
-//METHODE
+include('model/model_category.php');
+    class ManagerCategory extends Category{
+        //METHODE
         //méthode pour enregistrer une category
         public function ajoutCat($bdd){
             $name_cat = $this->getNameCat();
@@ -46,5 +43,27 @@ class managerCategory extends Category {
                 die('Error :'.$error->getMessage());
             }
         }
-}
+
+        public function deleteCategory($bdd){
+            $id_cat = $this->getIdCat();
+
+            try{
+                //Requête préparée
+                $req = $bdd->prepare('delete from category where id_cat = ?');
+
+                //Binding de Paramètre
+                $req->bindParam(1,$id_cat,PDO::PARAM_INT);
+
+                //Exécution de la Requête
+                $req->execute();
+
+                //Message de retour
+                return 'Suppression effectuée avec succès';
+
+            }
+            catch(Exception $error){
+                die('Error :'.$error->getMessage());
+            }
+        }
+    }
 ?>

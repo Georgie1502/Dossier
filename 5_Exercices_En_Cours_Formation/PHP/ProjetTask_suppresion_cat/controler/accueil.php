@@ -21,7 +21,7 @@
         $mdp_users = $_POST['mdp_users'];
 
         //Création de l'utilisateur qui veut s'enregistrer
-        $user = new User('', $name_users, $first_name_users, $login_users, $mdp_users);
+        $user = new ManagerUser('', $name_users, $first_name_users, $login_users, $mdp_users);
 
 
         //J'effectue la requête pour enregistrer l'utilisateur en BDD
@@ -37,7 +37,7 @@
         $mdp_users_connexion = $_POST['mdp_users_connexion'];
 
         //Création de l'utilsateur qui veut se connecter
-        $user_connect = new managerUser('','','',$login_users_connexion,$mdp_users_connexion);
+        $user_connect = new ManagerUser('','','',$login_users_connexion,$mdp_users_connexion);
 
         //Récupération des données users en BDD dans $data
         $data = $user_connect->selectUsersFromLogin($bdd);

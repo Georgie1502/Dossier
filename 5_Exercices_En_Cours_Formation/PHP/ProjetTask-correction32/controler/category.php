@@ -1,7 +1,7 @@
 <?php
     session_start();
     include('utils/connect.php');
-    include('manager/manager_category.php');
+    include('model/model_category.php');
     include('vue/header.php');
 
     $message_cat="";
@@ -16,7 +16,7 @@
             $name_cat = $_POST['name_cat'];
 
             //Créer la category à enregistrer
-            $category = new managerCategory("",$name_cat);
+            $category = new Category("",$name_cat);
 
             //Category va s'ajouter en BDD, et récupération du message de retour
             $message_cat = $category->ajoutCat($bdd);
@@ -35,7 +35,7 @@
         //3) Foreach mon tableau $data, pour afficher chaque ligne
 
         //ETAPE 1 : création de l'objet cat
-        $list_category = new managerCategory("","");
+        $list_category = new Category("","");
 
         //ETAPE 2 : requête Select et récupération de la liste dans $data
         $data = $list_category->afficherCategory($bdd);

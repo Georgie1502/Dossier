@@ -7,17 +7,26 @@ $path = isset($url['path']) ? $url['path'] : '/';
 /*--------------------------ROUTER -----------------------------*/
 //test de la valeur $path dans l'URL et import de la ressource
 switch($path){
-    //route /Jour_9/Demo_routing -> ./accueil.php
+    //route /PHP/Projet-Task-correction0812 -> ./accueil.php
     case $path === "/Projet-Task-correction0812/" or $path === "/Projet-Task-correction0812/accueil":
         include('controleur/accueil.php');
         break ;
 
-    //route /Jour_9/Projet-Task-correction0812 -> ./profil.php
+    //route /PHPProjet-Task-correction0812 -> ./profil.php
     case $path === "/Projet-Task-correction0812/profil":
         include('controleur/profil.php');
         break ;
 
-    //route /Jour_9/Projet-Task-correction0812 -> ./deconnexion.php
+    //route /PHP/Projet-Task-correction0812 -> ./category.php
+     case $path === "/Projet-Task-correction0812/category":
+        include('controleur/category.php');
+        break ;
+    //route /PHP/Projet-Task-correction0812 -> ./category.php
+    case $path === "/Projet-Task-correction0812/task":
+        include('controleur/task.php');
+        break ;
+
+    //route PHP/Projet-Task-correction0812 -> ./deconnexion.php
     case $path === "/Projet-Task-correction0812/deconnexion":
         include('controleur/deconnexion.php') ;
         break ;

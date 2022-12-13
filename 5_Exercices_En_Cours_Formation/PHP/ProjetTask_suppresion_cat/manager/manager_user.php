@@ -1,9 +1,9 @@
 <?php
-        //METHODES
-        //Méthode pour enregister un utilisateur en BDD
-        include("model/model_user.php");
-        class managerUser extends User{
+    include('model/model_user.php');
 
+    class ManagerUser extends User{
+        //METHODE
+        //Méthode pour enregister un utilisateur en BDD
         public function insertUser($bdd){
             //Récupérer les attributs à enregister
             $name_users = $this->getNameUsers();
@@ -95,20 +95,33 @@
             catch(Exception $error){
                 die('Error :'.$error->getMessage());
             }
-            }
-    //Méthode pour modifier un utilisateur
-    public function updateUsers($bdd){
-        $id_users=$this->getIdUsers();
-        $name_users=$this->getNameUsers() ;
-        $first_name_users=$this->getfirstNameUsers() ;
-        $login_users=$this->getLoginUsers() ;
-        $mdp_users=$this->getMdpUsers();
-
-        try{
-            //requete préparé 
-            $req= $bdd -> prepare('update users set ')
         }
 
+        //Méthode de mise à jour
+        public function updateUsers($bdd){
+            $id_users = $this->getIdUsers();
+            $name_users = $this->getNameUsers();
+            $first_name_users = $this->getFirstNameUsers();
+            $login_users = $this->getLoginUsers();
+            $mdp_users = $this->getMdpUsers();
+
+            try{
+                $req=$bdd->prepare('update users set name_users = ?, first_name_users = ?, login_users = ?, mdp_users = ? where id_users = ?');
+
+                $req->bindParam(1,$name_users,PDO::PARAM_STR);
+                $req->bindParam(2,$first_name_users,PDO::PARAM_STR);
+                $req->bindParam(3,$login_users,PDO::PARAM_STR);
+                $req->bindParam(4,$mdp_users,PDO::PARAM_STR);
+                $req->bindParam(5,$id_users,PDO::PARAM_INT);
+
+                $req->execute();
+
+                return 'Modification effectuée.';
+
+
+            }catch(Exception $error){
+                die('Error :'.$error->getMessage());
+            }
+        }
     }
-    }
-        ?>
+?>

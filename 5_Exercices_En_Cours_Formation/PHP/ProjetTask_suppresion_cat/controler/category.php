@@ -16,7 +16,7 @@
             $name_cat = $_POST['name_cat'];
 
             //Créer la category à enregistrer
-            $category = new managerCategory("",$name_cat);
+            $category = new ManagerCategory("",$name_cat);
 
             //Category va s'ajouter en BDD, et récupération du message de retour
             $message_cat = $category->ajoutCat($bdd);
@@ -27,7 +27,7 @@
 
 
         echo "<h3>Liste des Catégories</h3>
-                <ul>";
+                <form action='' method='post'>";
 
         //Affichage de la liste des catégories
         //1) Créer l'objet Category pour accéder à sa méthode de Select toutes les Catégories
@@ -35,17 +35,27 @@
         //3) Foreach mon tableau $data, pour afficher chaque ligne
 
         //ETAPE 1 : création de l'objet cat
-        $list_category = new managerCategory("","");
+        $list_category = new ManagerCategory("","");
 
         //ETAPE 2 : requête Select et récupération de la liste dans $data
         $data = $list_category->afficherCategory($bdd);
 
         //ETAPE 3 : afficher chaque ligne de $data
         foreach($data as $row){
-            echo "<li>".$row["name_cat"]."</li>";
+            echo "<p><input type='checkbox' name='box[]' value='".$row["id_cat"]."'>".$row["name_cat"]."</p>";
         }
 
-        echo "</ul>";
+        echo "<input type='submit' value='Effacer'></form>";
+
+        if(isset($_POST['box'])){
+            $tabCat = $_POST['box'];
+
+            foreach($tabCat as $id_cat){
+                $category = new ManagerCategory($id_cat,"");
+                $category->deleteCategory($bdd);
+            }
+            header('Location:http://localhost/Jour%2011/Projet%20Task/category');
+        }
 
     } else {
         echo "<h3>Ajout de Catégorie</h3>

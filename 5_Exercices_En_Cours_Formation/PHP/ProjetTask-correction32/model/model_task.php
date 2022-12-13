@@ -1,11 +1,65 @@
 <?php
-include("model/model_task.php");
+    class Task{
+        //ATTRIBUTS
+        private $id_task;
+        private $nom_task;
+        private $content_task;
+        private $date_task;
+        private $id_users;
+        private $id_cat;
 
-class managerTask extends Task {
+        //Constructeur
+        public function __construct($id_task,$nom_task,$content_task,$date_task,$id_users,$id_cat){
+            $this->id_task = $id_task;
+            $this->nom_task = $nom_task;
+            $this->content_task = $content_task;
+            $this->date_task = $date_task;
+            $this->id_users = $id_users;
+            $this->id_cat = $id_cat;
+        }
 
-    //METHODE
+         //GETTER et SETTER
+         public function getIdTask(){
+            return $this->id_task;
+        }
+        public function getNomTask(){
+            return $this->nom_task;
+        }
+        public function getContentTask(){
+            return $this->content_task;
+        }
+        public function getDateTask(){
+            return $this->date_task;
+        }
+        public function getIdUsers(){
+            return $this->id_users;
+        }
+        public function getIdCat(){
+            return $this->id_cat;
+        }
+
+        public function setIdTask($id_task){
+            $this->id_task = $id_task;
+        }
+        public function setNomTask($nom_task){
+            $this->$nom_task = $$nom_task;
+        }
+        public function setContentTask($content_task){
+            $this->content_task = $content_task;
+        }
+        public function setDateTask($date_task){
+            $this->date_task = $date_task;
+        }
+        public function setIdUsers($id_users){
+            $this->id_users = $id_users;
+        }
+        public function setIdCat($id_cat){
+            $this->id_cat = $id_cat;
+        }
+
+        //METHODE
         //méthode pour enregister une task
-        public function ajoutTask($bdd){ 
+        public function ajoutTask($bdd){
             //récupération des données à enregistrer
             $nom_task = $this->getNomTask();
             $content_task = $this->getContentTask();
@@ -57,5 +111,5 @@ class managerTask extends Task {
                 die('Error :'.$error->getMessage());
             }
         }
-}
+    }
 ?>

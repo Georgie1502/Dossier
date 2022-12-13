@@ -1,10 +1,31 @@
 <?php
+    class Category{
+        //ATTRIBUTS
+        private $id_cat;
+        private $name_cat;
 
-include ("model/model_category.php");
+        //Constructeur
+        public function __construct($id_cat,$name_cat){
+            $this->id_cat = $id_cat;
+            $this->name_cat = $name_cat;
+        }
 
-class managerCategory extends Category {
+        //GETTER et SETTER
+        public function getIdCat(){
+            return $this->id_cat;
+        }
+        public function getNameCat(){
+            return $this->name_cat;
+        }
 
-//METHODE
+        public function setIdCat($id_cat){
+            $this->id_cat = $id_cat;
+        }
+        public function setNameCat($name_cat){
+            $this->name_cat = $name_cat;
+        }
+        
+        //METHODE
         //méthode pour enregistrer une category
         public function ajoutCat($bdd){
             $name_cat = $this->getNameCat();
@@ -46,5 +67,6 @@ class managerCategory extends Category {
                 die('Error :'.$error->getMessage());
             }
         }
-}
+    }
+
 ?>

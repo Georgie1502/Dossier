@@ -1,11 +1,9 @@
 <?php
-include("model/model_task.php");
-
-class managerTask extends Task {
-
+include('model/model_task.php');
+class ManagerTask extends Task {
     //METHODE
         //méthode pour enregister une task
-        public function ajoutTask($bdd){ 
+        public function ajoutTask($bdd){
             //récupération des données à enregistrer
             $nom_task = $this->getNomTask();
             $content_task = $this->getContentTask();
@@ -57,5 +55,29 @@ class managerTask extends Task {
                 die('Error :'.$error->getMessage());
             }
         }
+
+        public function deleteTask($bdd){
+            $id_task = $this->getIdTask();
+
+            try{
+                //Requête préparée
+                $req = $bdd->prepare('delete from task where id_task = ?');
+
+                //Binding de Paramètre
+                $req->bindParam(1,$id_task,PDO::PARAM_INT);
+
+                //Exécution de la Requête
+                $req->execute();
+
+                //Message de retour
+                return 'Suppression effectuée avec succès';
+
+            }
+            catch(Exception $error){
+                die('Error :'.$error->getMessage());
+            }
+        }
+
 }
+
 ?>
