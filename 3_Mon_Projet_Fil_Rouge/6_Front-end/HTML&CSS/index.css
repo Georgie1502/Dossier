@@ -184,7 +184,7 @@ button:hover{
 img.exp{
     width: 370px;
     height: auto;
-    padding: 5vh;
+    padding: 5vw;
 }
 
 .exper{
@@ -193,7 +193,7 @@ img.exp{
     padding-top: 5px;
 }
 /****************************Formulaire***************************************/
-section.text{
+section.text1{
     width: 100%;
     height: 400px;
     background-color:#FBCD93;
@@ -214,12 +214,12 @@ color:#648BB3;
     display: flex;
     text-align: center;
     justify-content: space-around;
-    margin: 10vh;
+    margin: 10vw;
    
 }
 
 #ensemble{
-    align: midle;
+   
    
 }
 #bati{
