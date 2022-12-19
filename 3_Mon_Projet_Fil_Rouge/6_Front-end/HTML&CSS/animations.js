@@ -1,33 +1,11 @@
-gsap.from(".box", {
-    duration: 2,
-    scale: 0.5, 
-    opacity: 0, 
-    delay: 0.5, 
-    stagger: 0.2,
-    ease: "elastic", 
-    force3D: true
-  });
-  
-  document.querySelectorAll(".box").forEach(function(box) {
-    box.addEventListener("click", function() {
-      gsap.to(".box", {
-        duration: 0.5, 
-        opacity: 0, 
-        y: -100, 
-        stagger: 0.1,
-        ease: "back.in"
-      });
-    });
-  });
 
+const words = ["Plaquistes","Electriciennes","Plombières","Menuisières"];
 
-  const words = ["Plaquistes","Electriciennes","Plombières","Menuisières"];
+let masterTL = gsap.timeline({repeat: -1});
 
-  let masterTL = gsap.timeline({repeat: -1})
-
-  words.forEach(word => {
+words.forEach(word => {
     let tl = gsap.timeline({ repeat : 1, yoyo:true})
     tl.to('.text',{duration: 1, text: word})
     masterTL.add(tl)
    
-  } )
+  } );
