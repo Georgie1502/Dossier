@@ -23,7 +23,8 @@ nav
     width: 100%;
     height: 100px;
     background: #648BB3;
-    position: sticky;
+    position: fixed;
+    z-index: 1000000;
     
     
 }
@@ -35,6 +36,7 @@ nav .main_pages
     justify-content: space-around;
     align-items: center;
     position: sticky;
+
 }
  
 nav .main_pages a 
@@ -47,7 +49,6 @@ nav .main_pages a
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    position: sticky;
     
 }
  
@@ -112,14 +113,14 @@ nav .main_pages a {
 h1{
     font-family:'Rochester', cursive;
     font-size: 3em;
-    padding: 2vh;
+    padding-top: 14vh;
     color:  #648BB3;
     
 }
 
 div .search{
     position: absolute;
-    padding: 5px;
+    
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -225,12 +226,27 @@ section .formulaire{
 input, textarea, input[type="file"]{
     padding: 10px;
     margin: 5px;
-    width: 300px;
+    width: 300px;}
+
+input[type="submit"]{
+    background-color: #fff;
+    border:none;
+    border-radius: 8px;
+    width: 100px;
+    grid-column: 2;
+
+
+    }
      
-}
+
 label{
-    color: black;
-    padding: 20px;
+    color:black;
+    padding: 15px;
+    font-size: 20px;
+    align-items: flex-end;
+    font-weight: bold;
+    justify-content: end;
+    align-items:;
     
 }
 fieldset{
@@ -243,7 +259,11 @@ fieldset{
 .contact{
     display: grid;
     grid-template-columns:  1fr 1fr  ;
-    grid-template-rows :auto;  
+    grid-template-rows :auto;
+    justify-content: end;
+   
+    
+     
 
 }
 
