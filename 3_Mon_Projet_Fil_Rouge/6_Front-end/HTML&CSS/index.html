@@ -104,9 +104,19 @@
                 <label for="mail">Mail:</label>
                 <input type="email" name="mail" placeholder="Entrez votre email" maxlength="20" id="email" required>
 
-                <label for="activite">Activité:</label>
-                <input type="text" name="activite" placeholder="Entrez votre activité" maxlength="20" id="activite" required>
-                
+                <label for="adresse">Adresse:</label>
+                <input type="text" name="adresse" placeholder="Entrez votre adresse" maxlength="30" id="adresse" required>
+
+                <label for="metier">Activité:</label>
+                <input type="text" name="metier" placeholder="Entrez votre activité" maxlength="20" id="activite" required>
+
+                <label for="entreprise">Nom d'entreprise:</label>
+                <input type="text" name="entreprise" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
+
+                <label for="experience">Année de création:</label>
+                <input type="date" name="experience" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
+
+
                 <label for="ville">Ville:</label>
                 <input type="text" name="ville" placeholder="Entrez votre ville" maxlength="20" id="ville" required>
 
@@ -114,8 +124,8 @@
                 <input type="file" accept=".png, .jpg, gif" multiple required>
 
 
-                <label for="textarea">Parcours </label>
-                <textarea placeholder="Parcours" required ></textarea>
+                <label for="textarea">Message: </label>
+                <textarea class="message" placeholder="Message" required maxlength="600"></textarea>
 
                 <input type="submit" name="submit" value="Envoyer"> 
             </div> 
