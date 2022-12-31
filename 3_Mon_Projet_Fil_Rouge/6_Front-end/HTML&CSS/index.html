@@ -52,7 +52,7 @@
             <div class="search">
                 <h2>Trouvez une artisane près de chez vous</h2>
                 <!-- Barre de recherche -->
-                <input type="text" name="barra" placeholder="Par exemple : Plomberie" required>
+                <input class="barra" type="text" name="barra" placeholder="Par exemple : Plomberie" required>
                 <button>Rechercher</button> 
                
             </div> 
@@ -83,56 +83,52 @@
     <div class="reseau">    
     <h2 id="bati">Rejoignez dès aujourd'hui le réseau de Batim’elles</h2>
     <img id="ensemble" src="./Images/artisanes.jpeg" alt="Femmes sororite " >
+
     </div>  
-                                
 
-<div class="contac">
-    <form  method="POST" action="">
-        <fieldset>
 
+    <div class="container">
+        
+        <form action="/action_page.php">
             <h2>Rejoindre la communauté</h2>
-            <div class="contact">
-                <label for="nom">Nom:</label>
-                <input type="text" name="nom" placeholder="Entrez votre nom" maxlength="20" id="nom" required>
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" placeholder="Entrez votre nom" maxlength="20" id="nom" required>
 
-                <label for="prenom">Prénom:</label>
-                <input type="text" name="prenom" placeholder="Entrez votre prénom" maxlength="20" id="prenom" required>
+            <label for="prenom">Prénom:</label>
+            <input type="text" name="prenom" placeholder="Entrez votre prénom" maxlength="20" id="prenom" required>
 
-                <label for="telephone">Téléphone:</label>
-                <input type="tel" name="telephone" placeholder="Entrez votre téléphone" maxlength="20" id="telephone" required>
+            <label for="telephone">Téléphone:</label>
+            <input type="tel" name="telephone" placeholder="Entrez votre téléphone" maxlength="20" id="telephone" required><br>
 
-                <label for="mail">Mail:</label>
-                <input type="email" name="mail" placeholder="Entrez votre email" maxlength="20" id="email" required>
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" placeholder="Entrez votre email" maxlength="20" id="email" required>
 
-                <label for="adresse">Adresse:</label>
-                <input type="text" name="adresse" placeholder="Entrez votre adresse" maxlength="30" id="adresse" required>
+            <label for="adresse">Adresse:</label>
+            <input type="text" name="adresse" placeholder="Entrez votre adresse" maxlength="30" id="adresse" required>
 
-                <label for="metier">Activité:</label>
-                <input type="text" name="metier" placeholder="Entrez votre activité" maxlength="20" id="activite" required>
+            <label for="metier">Activité:</label>
+            <input type="text" name="metier" placeholder="Entrez votre activité" maxlength="20" id="activite" required>
 
-                <label for="entreprise">Nom d'entreprise:</label>
-                <input type="text" name="entreprise" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
+            <label for="entreprise">Nom d'entreprise:</label>
+            <input type="text" name="entreprise" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
 
-                <label for="experience">Année de création:</label>
-                <input type="date" name="experience" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
-
-
-                <label for="ville">Ville:</label>
-                <input type="text" name="ville" placeholder="Entrez votre ville" maxlength="20" id="ville" required>
-
-                <label for="file">Photos de vos realisation (5 max, jpg ou pdf)* </label>
-                <input type="file" accept=".png, .jpg, gif" multiple required>
+            <label for="experience">Année de création:</label>
+            <input type="date" name="experience" placeholder="Entrez le nom de votre entreprise" maxlength="30" id="entreprise" required>
 
 
-                <label for="textarea">Message: </label>
-                <textarea class="message" placeholder="Message" required maxlength="600"></textarea>
+            <label for="ville">Ville:</label>
+            <input type="text" name="ville" placeholder="Entrez votre ville" maxlength="20" id="ville" required>
 
-                <input type="submit" name="submit" value="Envoyer"> 
-            </div> 
-        </fieldset>
+            <label for="file">Photos de vos realisation (5 max, jpg ou pdf)* </label>
+            <input type="file" accept=".png, .jpg, gif" multiple required>
 
-    </form>
-</div>
+
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+      
+          <input type="submit" value="Envoyer">
+        </form>
+    </div>
 
 </section>
 </main>
