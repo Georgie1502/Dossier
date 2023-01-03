@@ -12,8 +12,8 @@ body{
 h2{
  
     text-decoration:none;
-    font-size: 30px;
-    margin: 10px;
+    font-size: 50px;
+    margin: 50px;
     color: #648BB3;
 }
 
@@ -22,9 +22,10 @@ nav
     margin: auto;
     width: 100%;
     height: 100px;
-    background: #648BB3;
+    background:#648BB3;
     position: fixed;
     z-index: 1000000;
+   
     
     
 }
@@ -49,6 +50,7 @@ nav .main_pages a
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 25px;
     
 }
  
@@ -98,28 +100,68 @@ nav .main_pages a {
 .recherche{
     display: flex;
     flex-direction: column;
-    margin-top: 20vh;
+
     }
 }
+/* Recherche responsive */
 
+@media (max-width: 480px) {
+    #premier{
+      font-size: 70px;
+     padding: 7vh;
+    }
+    .search{
+        padding: 20px; ;
+        font-size:  15px; 
+    }
+    h2{
+        font-size:  30px; 
+    }
+    section.recherche{
+        height: auto;
+    }
+    button{
+   
+
+
+    }
+
+/* Formulaire responsive */
+section.text1 p{
+    height: auto;
+    font-size: 5vh;
+
+    
+    
+}
+
+  }
 /****************************************************** Recherche ******************************************************************************/
 .recherche{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     text-align: center;
     font-size: 35px;
+   
+}
+section.recherche{
+    background-image: url("/Newphictures/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:100% 100% ;
 }
 
 h1{
     font-family:'Rochester', cursive;
     font-size: 3em;
     padding-top: 14vh;
-    color:  #648BB3;
+    color: #1872D9;
     
 }
 
 div .search{
     position: absolute;
+   
     
     display: flex;
     flex-direction: column;
@@ -127,22 +169,22 @@ div .search{
     justify-content: center;
 
 }
-.search .barra{
+#barra{
     width: 310px;
     height: 50px;
     padding:0 50px ;
     font-size: 18px;
-    color : #648BB3;
+    color : #1872D9;
     outline: none;
-    border: 2px solid silver;
-    border-radius: 30px;
+    border: 3px solid silver;
+    border-radius: 60px;
   
 }
 
 button{
     height: 50px;
     width: 15vh;
-    background-color: #648BB3;
+    background-color: #1872D9;
     border: none;
     color: white;
    
@@ -154,7 +196,7 @@ button{
     margin: 7px 6px 4px 0;
     cursor: pointer;
     border-radius: 5vh;
-    left: 54%;
+    left: 55%;
     padding-top: 2px;
    
 }
@@ -190,28 +232,36 @@ img.exp{
 section.text1{
     width: 100%;
     height: 400px;
-    background-color:#FBCD93;  
+    background-color:#E2EAC4;
+    margin-bottom: 10px;
+    
+ 
+
 }
 
-p{
+.message1{
     font-size: 70px;
     text-align: center;
-    padding-top: 55px;
+    padding:80px;
+
 }
 
  .reseau{
     display: flex;
     text-align: center;
-    justify-content: space-around;
-    margin: 10vw;
-   
+    margin: 2vw;
+    
 } 
 
 #bati{
-  
     font-size: 50px;
-   
     padding-top: 55px 00 55px;
+}
+
+#ensemble{
+    border-radius: 50%;
+    height: auto;
+    width: 50%;
 }
 
 
@@ -265,11 +315,91 @@ input[type=text], textarea, input[type=email], input[type=tel], input[type=file]
   
 
 /****************************Foooter***************************************/
-
+/* 
 footer{
     width: auto;
     height: 200px;
     background-color: #648BB3;
 
     padding: 30px;
-}
+} */
+/* @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+body {
+    background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+    font-family: 'Rubik', sans-serif;
+    background: #455A64;
+    height: 100 !important;
+} */
+
+
+
+footer {
+    background-color:  #648BB3;
+    color: #fff;
+    padding: 20px 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  footer .container2 {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer .footer-links a {
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  footer .footer-links a:last-child {
+    margin-right: 0;
+  }
+  
+  footer .footer-links a:hover {
+    color: #ccc;
+  }
+  
+ 
+  footer .social-links a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  footer .social-links a:last-child {
+    margin-right: 0;
+  }
+  
+  footer .social-links a:hover {
+    color: #ccc;
+  }
+  
+  footer .copyright {
+    font-size: 14px;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 767px) {
+    footer {
+      flex-direction: column;
+    }
+    footer .container2 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    footer .footer-links,
+    {
+      margin-bottom: 10px;
+    }
+  }

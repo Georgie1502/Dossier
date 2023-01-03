@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Accueil</title>
     <link href="index.css" rel="stylesheet">
+    <link href="footer.html" rel="footer">
    
     <!-- Police Body-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@100&family=Rochester&display=swap" rel="stylesheet">
     
-    <!-- ANIMATION EXPERTISES -->
+  
 
 </head>
 </head>
@@ -52,7 +53,7 @@
             <div class="search">
                 <h2>Trouvez une artisane près de chez vous</h2>
                 <!-- Barre de recherche -->
-                <input class="barra" type="text" name="barra" placeholder="Par exemple : Plomberie" required>
+                <input id="barra" type="text" name="barra" placeholder="Par exemple : Plomberie" required>
                 <button>Rechercher</button> 
                
             </div> 
@@ -73,7 +74,7 @@
         </section>
  <!-- *********************************Formulaire*************************************** -->
 <section class="text1">
-    <p>Nous vous aidons à vous faire connaître, à fidéliser vos clients et à vous épanouir dans votre métier.</p>
+    <p class="message1">Nous vous aidons à vous faire connaître, à fidéliser vos clients et à vous épanouir dans votre métier.</p>
 
 </section>
  
@@ -141,9 +142,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/EasePack.min.js"></script>
 
     <script src = "animations.js"></script>
+
+    <!-- footer -->
     <footer>
-        
-    </footer>
+        <div class="container2">
+          <div class="footer-links">
+            <a href="#">Accueil</a>
+            <a href="#">Trouver une artisane</a>
+            <a href="#">Rejoindre le reseau</a>
+            <a href="#">A propos</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div class="copyright">
+            Copyright &copy; 2023 Batim’elles. Tous droits réservés.
+          </div>
+        </div>
+      </footer>
+    
+    
 </body>
 </html>
 
