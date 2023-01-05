@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    {% if value != null %}
+        <h1>Bienvenue {{ value }}</h1>
+    {% else %}
+        <h1>Bienvenue</h1>
+    {% endif %}
+{% endblock %}
