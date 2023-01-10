@@ -1,32 +1,30 @@
-Vue.createApp({
-    
-       data() {
-        return{
-        leNombre: 0,
-        nameUser: "",
-          
-         },
-         
+const app = Vue.createApp({
+    data() {
+        return { 
+        leNombre:0,
+        nameUser: ''};
+    },
+    methods: {
+        augmenter(){
+        this.leNombre ++;
+    },
+    reduire(){
+        this.leNombre --;
+    },
+    },
+    computed:{
+            afficherNameUser() {
+        console.log('fonction executée');
+        if(this.nameUser ===''){
+            return 'test'
+        }
+        else{
+            return 'autre Test';
+        }
         },
-        methods: {
-            afficherName(){
-                console.log('fonction exécutée')
-            if (nameUser=""){ 
-                    return "test";
-                }else {return"une autre test"
-            },
-          
-            },
-             augmenter(){
-                this.leNombre ++;  
-            },
-            reduir(){
-                this.leNombre --;
-            },
-            }
-         
-    
-    }).mount('#monApp');
+    }
+    });
+    app.mount('#monApp');
     
     
     
