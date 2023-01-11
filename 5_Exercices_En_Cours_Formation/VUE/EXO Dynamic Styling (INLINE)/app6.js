@@ -1,21 +1,24 @@
-Vue.createApp({
-    data(){
+const app = Vue.createApp({
+    data() {
         return {
-            selectCard1: false,
-            selectCard2: false,
-            
-        };        
+        selectCard1: false,
+        selectCard2: false,
+        
+     
+    
+        };
     },
-    methods: {  
-        selectCard(uneCard){
-            if (uneCard === 1){
-                return selectCard1 = true
-            }else if (uneCard === 2){
-                return selectCard2= true
-            }
+    methods: {
+        selectionCard(uneCard) {
+        if (uneCard === 1) {
+            // this.selectCard1=true;
+            this.selectCard1 = !this.selectCard1;
         }
-
-       
-
-    }
-}).mount('#monApp');
+        if (uneCard === 2) {
+            // this.selectCard2=true;
+            this.selectCard2 = !this.selectCard2;
+        }
+        },
+    },
+    });
+    app.mount('#monApp');
