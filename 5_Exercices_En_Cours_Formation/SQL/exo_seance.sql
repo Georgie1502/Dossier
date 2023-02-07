@@ -79,8 +79,47 @@ primary key(id_seance, id_eleve)
 
 alter table detail 
 add constraint fk_evaluer_eleve
-foreign key(id_util)
-references utilisateur(id_util);
+foreign key(id_eleve)
+references eleve(id_eleve);
+
+alter table utilisateur 
+add constraint fk_posseder_role
+foreign key(id_role)
+references role (id_role);
+
+alter table detail 
+add constraint fk_evaluer_eleve
+foreign key(id_eleve)
+references eleve(id_eleve);
+
+
+
+alter table eleve 
+add constraint fk_appartenir_classe
+foreign key(id_classe)
+references classe(id_classe);
+
+alter table seance
+add constraint fk_categoriser_type_seance
+foreign key(id_type_seance)
+references type_seance(id_type_seance);
+
+alter table seance
+add constraint fk_categoriser_type_seance
+foreign key(id_type_seance)
+references type_seance(id_type_seance);
+
+alter table utilisateur
+add constraint fk_categoriser_type_seance
+foreign key(id_type_seance)
+references type_seance(id_type_seance);
+
+
+
+
+
+
+
 
 
 

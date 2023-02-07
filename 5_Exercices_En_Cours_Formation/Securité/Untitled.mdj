@@ -8875,7 +8875,7 @@
 									"top": 68,
 									"width": 304,
 									"height": 13,
-									"text": "Redacteur",
+									"text": "Visiteur",
 									"verticalAlignment": 3
 								}
 							],
@@ -10320,7 +10320,7 @@
 											"top": 120,
 											"width": 98.2490234375,
 											"height": 13,
-											"text": "(from Redacteur)"
+											"text": "(from Visiteur)"
 										},
 										{
 											"_type": "LabelView",
@@ -13798,7 +13798,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGGJeWlnZcXvZA="
 					},
-					"name": "Redacteur",
+					"name": "Visiteur",
 					"nodes": [
 						{
 							"_type": "UMLAction",
